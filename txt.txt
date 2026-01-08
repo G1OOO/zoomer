@@ -1,0 +1,316 @@
+html:
+          <div class="cart">
+            <div class="top">
+              <h4>კალათა</h4>
+            </div>
+            <div class="main">
+              <img src="images/cart.png" alt="" class="imgza">
+            </div>
+            <div class="bottom">
+              <p class="total-price">ჯამური ფასი: <span class="pricep">0 ₾</span></p>
+
+              <button class="open-cart">კალათის გახსნა</button>
+            </div>
+          </div>
+
+
+css:
+.cart{
+  position: absolute;
+  box-shadow: 1px 1px 1px #D5D5D5;
+  height: 355px;
+  width: 378px;
+  padding: 16px 20px;
+  background-color: white;
+  border-radius: 15px;
+  z-index: 10;
+  margin-top: 60px;
+  display: none;
+}
+
+.imgza{
+  height: 150px;
+  margin: 0 auto;
+}
+
+.main{
+  height: 200px;
+  overflow-y: auto;
+}
+
+.cart .top{
+  display: flex;
+  align-items: center;
+  height: 17px;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.cart .top p{
+  opacity: 0.75;
+  font-size: 14px;
+}
+
+.cart .bottom{
+  display: flex;
+  flex-direction: column;
+}
+
+.total-price{
+  align-self: end;
+}
+
+.total-price span{
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.open-cart{
+  height: 40px;
+  width: 180px;
+  background-color: #eb5d29;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+.cartdiv{
+  height: 90px;
+  max-width: 100%;
+  background-color: #F2F2F2;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.cartimg{
+  height: 60px;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+.cartname{
+  white-space: pre-line;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.cartprice{
+  margin: 0;
+}
+
+.cartrow{
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+}
+
+
+.cartrow2{
+  width: 115px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 20px;
+  padding-right: 20px;
+}
+
+.dlt{
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+}
+
+.adder{
+  height: 30px;
+  width: 95px;
+  background-color: #EC5E2A;
+  display: flex;
+  border-radius: 15px;
+  justify-content: space-evenly;
+  color: white;
+  align-items: center;
+}
+
+.minus{
+  margin: 0;
+  cursor: pointer;
+}
+
+.numz{
+  margin: 0;
+}
+
+.plus{
+  margin: 0;
+  cursor: pointer;
+}
+
+
+js:
+const cart = document.querySelector(".cart");
+const cartbtn = document.querySelector(".cartbtn");
+const pricep = document.querySelector(".pricep");
+
+let cleart;
+
+cartbtn.addEventListener("mouseenter", () => {
+  clearTimeout(cleart);
+  cart.style.display = "block";
+});
+
+cartbtn.addEventListener("mouseleave", () => {
+  cleart = setTimeout(() => {
+    cart.style.display = "none";
+  }, 150);
+});
+
+cart.addEventListener("mouseenter", () => {
+  clearTimeout(cleart);
+  cart.style.display = "block";
+});
+
+cart.addEventListener("mouseleave", () => {
+  cleart = setTimeout(() => {
+    cart.style.display = "none";
+  }, 150);
+});
+
+const buybtns = document.querySelectorAll(".buy");
+const main = document.querySelector(".main");
+
+buybtns.forEach((buybtn) => {
+  buybtn.addEventListener("click", (e) => {
+    const item = e.target.parentElement.parentElement;
+    const productname = item.querySelector(".name").textContent;
+    const productprice = item.querySelector(".price").textContent;
+    const productimg = item.querySelector(".item-img").getAttribute("src");
+
+
+
+    function shortenText(text) {
+  const words = text.split(" ");
+
+  if (words.length <= 4) return text;
+
+  return words.slice(0, 4).join(" ") + "\n" + words.slice(4, 6).join(" ") + " ...";
+}
+
+
+    function addnew() {
+      const newdiv = document.createElement("div");
+      main.appendChild(newdiv);
+      newdiv.classList.add("cartdiv");
+      const mainimg = main.querySelector(".imgza");
+      mainimg.style.display = "none";
+
+
+
+      const cartimg = document.createElement("img")
+      newdiv.appendChild(cartimg)
+      cartimg.classList.add("cartimg")
+      cartimg.src = productimg
+
+
+      const cartrow = document.createElement("div");
+      newdiv.appendChild(cartrow);
+      cartrow.classList.add("cartrow");
+
+
+      const cartname = document.createElement("p");
+      cartrow.appendChild(cartname);
+      cartname.classList.add("cartname");
+      cartname.textContent = productname;
+      cartname.textContent = shortenText(cartname.textContent);
+
+
+      const cartprice = document.createElement("p")
+      cartrow.appendChild(cartprice)
+      cartprice.classList.add("cartprice")
+      cartprice.textContent = productprice
+
+
+
+
+      const cartrow2 = document.createElement("div");
+      newdiv.appendChild(cartrow2);
+      cartrow2.classList.add("cartrow2");
+
+      const dlt = document.createElement("img");
+      cartrow2.appendChild(dlt)
+      dlt.classList.add("dlt")
+      dlt.src = "images-icons/image copy 158.png"
+      dlt.addEventListener("click", () => {
+        newdiv.remove()
+        updatetotal()
+      })
+      
+
+
+
+      const adder = document.createElement("div");
+      cartrow2.appendChild(adder)
+      adder.classList.add("adder")
+
+
+
+      const minus = document.createElement("p");
+      adder.appendChild(minus)
+      minus.classList.add("minus")
+      minus.textContent = "-"
+      minus.addEventListener("click", () => {
+        let currentNum = parseInt(numz.textContent);
+        if (currentNum > 1) {
+          numz.textContent = currentNum - 1;
+          updatetotal()
+        }
+      });
+      
+
+      const numz = document.createElement("p");
+      adder.appendChild(numz)
+      numz.classList.add("numz")
+      numz.textContent = "1"
+
+      const plus = document.createElement("p");
+      adder.appendChild(plus)
+      plus.classList.add("plus")
+      plus.textContent = "+"
+      plus.addEventListener("click", () => {
+        let currentNum = parseInt(numz.textContent);
+        numz.textContent = currentNum + 1;
+        updatetotal()
+      });
+    }
+
+function updatetotal() {
+  const cartItems = document.querySelectorAll(".cartdiv");
+  let total = 0;
+
+  cartItems.forEach((item) => {
+    const price = item.querySelector(".cartprice").textContent.replace(" ₾", "");
+    const quantity = item.querySelector(".numz").textContent;
+    total += price * quantity; 
+  });
+
+  pricep.textContent = total + " ₾";
+}
+
+    addnew();
+    updatetotal();
+  });
+});
