@@ -1363,6 +1363,12 @@ a {
 }
 
 .cartimg{
+  height: 12.5em;
+  border-radius: 10px;
+  margin-right: 3.5em;
+}
+
+.cartimgg{
   height: 60px;
   border-radius: 10px;
   margin-right: 10px;

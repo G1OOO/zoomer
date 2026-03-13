@@ -510,7 +510,7 @@ buybtns.forEach((buybtn) => {
 
       const cartimg = document.createElement("img")
       newdiv.appendChild(cartimg)
-      cartimg.classList.add("cartimg")
+      cartimg.classList.add("cartimgg")
       cartimg.src = productimg
 
 
