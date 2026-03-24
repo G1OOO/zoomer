@@ -1,2016 +1,2654 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>document</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-</head>
-
-<body>
-  <header class="header">
-    <div class="topbar">
-      <div class="wrap topbar-inner">
-        <div class="topbar-left">
-          <div class="pill"><i class="fa-solid fa-phone-volume"></i></div>
-          <a class="topbar-phone" href="#">*7007 / +995 (32) 2 60 30 60</a>
-        </div>
-
-        <nav class="topbar-nav">
-          <a href="#">საკორპორაციო</a>
-          <a href="#">მაღაზიები</a>
-          <a href="#">Trade In</a>
-          <a href="#">კრედიტი</a>
-          <a href="#">ფილიალები</a>
-        </nav>
-
-        <button class="lang-btn" type="button"><img src="images/georgia.png" alt=""></button>
-      </div>
-    </div>
-
-    <div class="mainbar">
-      <div class="wrap mainbar-inner">
-        <div class="brand">
-          <div><img src="images/logo.png" alt=""></div>
-        </div>
-
-        <button class="cat-btn" type="button">
-          <div class="grid-ico"><i class="fa-solid fa-list"></i></div>
-          <span>ნავიგაცია</span>
-        </button>
-
-        <div class="search">
-          <div class="search-ico"><i class="fa-solid fa-magnifying-glass"></i></div>
-          <input class="search-input" type="search" placeholder="ძიება" />
-        </div>
-
-        <div class="actions">
-          <div class="cart-wrap">
-            <button class="action-btn cart-button" type="button">
-              <div class="action-ico"><i class="fa-solid fa-cart-shopping"></i></div>
-              <span>კალათა</span>
-            </button>
-            <div class="cart">
-              <div class="top">
-                <h4>კალათა</h4>
-              </div>
-              <div class="main">
-                <img src="images/cart.png" alt="" class="cartimg">
-              </div>
-              <div class="bottom">
-                <p class="total-price">ჯამური ფასი: <span class="total-price-value">0 ₾</span></p>
-                <button class="open-cart">კალათის გახსნა</button>
-              </div>
-            </div>
+  <body>
+    <header class="header">
+      <div class="topbar">
+        <div class="wrap topbar-inner">
+          <div class="topbar-left">
+            <div class="pill"><i class="fa-solid fa-phone-volume"></i></div>
+            <a class="topbar-phone" href="#">*7007 / +995 (32) 2 60 30 60</a>
           </div>
 
-          <button class="action-btn" type="button">
-            <div class="action-ico"><i class="fa-regular fa-user"></i></div>
-            <span>შესვლა</span>
+          <nav class="topbar-nav">
+            <a href="#">საკორპორაციო</a>
+            <a href="#">მაღაზიები</a>
+            <a href="#">Trade In</a>
+            <a href="#">კრედიტი</a>
+            <a href="#">ფილიალები</a>
+          </nav>
+
+          <button class="lang-btn" type="button">
+            <img src="images/georgia.png" alt="" />
+          </button>
+        </div>
+      </div>
+
+      <div class="mainbar">
+        <div class="wrap mainbar-inner">
+          <div class="brand">
+            <div><img src="images/logo.png" alt="" /></div>
+          </div>
+
+          <button class="cat-btn" type="button">
+            <div class="grid-ico"><i class="fa-solid fa-list"></i></div>
+            <span>ნავიგაცია</span>
           </button>
 
-          <button class="sale-btn" type="button">%</button>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <main class="page">
-    <section class="wrap hero">
-      <aside class="sidebar">
-        <a class="side-item" data-menu="mobile" href="#"><span class="side-ico"><i class="fa-solid fa-mobile"></i></span>მობილურები</a>
-        <a class="side-item" data-menu="tablet" href="#"><span class="side-ico"><i class="fa-solid fa-tablet"></i></span>ტაბები</a>
-        <a class="side-item" data-menu="laptop" href="#"><span class="side-ico"><i class="fa-solid fa-laptop"></i></span>ლეპტოპები | IT</a>
-        <a class="side-item" data-menu="audio" href="#"><span class="side-ico"><i class="fa-regular fa-headphones"></i></span>აუდიო სისტემა</a>
-        <a class="side-item" data-menu="gaming" href="#"><span class="side-ico"><i class="fa-solid fa-gamepad"></i></span>Gaming</a>
-        <a class="side-item" data-menu="tv" href="#"><span class="side-ico"><i class="fa-solid fa-tv"></i></span>TV | მონიტორები</a>
-        <a class="side-item" data-menu="photo" href="#"><span class="side-ico"><i class="fa-regular fa-camera"></i></span>ფოტო | ვიდეო</a>
-        <a class="side-item" data-menu="smart" href="#"><span class="side-ico"><i class="fa-regular fa-house"></i></span>ჭკვიანი სახლი</a>
-        <div class="side-more"></div>
-      </aside>
-
-      <div id="mega-menu-container" class="mega-menu"></div>
-
-      <div class="hero-right">
-        <div class="hero-cards">
-          <div class="hero-card">
-            <div class="hero-arrow left"><i class="fa-solid fa-chevron-left"></i></div>
-            <div class="hero-banner"><img src="images/banner1.png" alt=""></div>
+          <div class="search">
+            <div class="search-ico">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <input class="search-input" type="search" placeholder="ძიება" />
           </div>
 
-          <div class="hero-card">
-            <div class="hero-banner"><img src="images/banner2.png" alt=""></div>
-          </div>
+          <div class="actions">
+            <div class="cart-wrap">
+              <button class="action-btn cart-button" type="button">
+                <div class="action-ico">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+                <span>კალათა</span>
+              </button>
+              <div class="cart">
+                <div class="top">
+                  <h4>კალათა</h4>
+                </div>
+                <div class="main">
+                  <img src="images/cart.png" alt="" class="cartimg" />
+                </div>
+                <div class="bottom">
+                  <p class="total-price">
+                    ჯამური ფასი: <span class="total-price-value">0 ₾</span>
+                  </p>
+                  <button class="open-cart">კალათის გახსნა</button>
+                </div>
+              </div>
+            </div>
 
-          <div class="hero-card">
-            <div class="hero-banner"><img src="images/banner3.png" alt=""></div>
-          </div>
+            <button class="action-btn" type="button">
+              <div class="action-ico"><i class="fa-regular fa-user"></i></div>
+              <span>შესვლა</span>
+            </button>
 
-          <div class="hero-card">
-            <div class="hero-arrow right"><i class="fa-solid fa-angle-right"></i></div>
-            <div class="hero-banner"><img src="images/banner4.png" alt=""></div>
+            <button class="sale-btn" type="button">%</button>
           </div>
         </div>
       </div>
-    </section>
+    </header>
 
-    <section class="wrap section">
-      <div class="section-head">
-        <h2 class="section-title">ზუმერული საჩუქრების ერთი სული აქვთ</h2>
-      </div>
+    <main class="page">
+      <section class="wrap hero">
+        <aside class="sidebar">
+          <a class="side-item" data-menu="mobile" href="#"
+            ><span class="side-ico"><i class="fa-solid fa-mobile"></i></span
+            >მობილურები</a
+          >
+          <a class="side-item" data-menu="tablet" href="#"
+            ><span class="side-ico"><i class="fa-solid fa-tablet"></i></span
+            >ტაბები</a
+          >
+          <a class="side-item" data-menu="laptop" href="#"
+            ><span class="side-ico"><i class="fa-solid fa-laptop"></i></span
+            >ლეპტოპები | IT</a
+          >
+          <a class="side-item" data-menu="audio" href="#"
+            ><span class="side-ico"
+              ><i class="fa-regular fa-headphones"></i></span
+            >აუდიო სისტემა</a
+          >
+          <a class="side-item" data-menu="gaming" href="#"
+            ><span class="side-ico"><i class="fa-solid fa-gamepad"></i></span
+            >Gaming</a
+          >
+          <a class="side-item" data-menu="tv" href="#"
+            ><span class="side-ico"><i class="fa-solid fa-tv"></i></span>TV |
+            მონიტორები</a
+          >
+          <a class="side-item" data-menu="photo" href="#"
+            ><span class="side-ico"><i class="fa-regular fa-camera"></i></span
+            >ფოტო | ვიდეო</a
+          >
+          <a class="side-item" data-menu="smart" href="#"
+            ><span class="side-ico"><i class="fa-regular fa-house"></i></span
+            >ჭკვიანი სახლი</a
+          >
+          <div class="side-more"></div>
+        </aside>
 
-      <div class="carousel">
-        <button class="car-btn left" type="button"><i class="fa-solid fa-chevron-left"></i></button>
+        <div id="mega-menu-container" class="mega-menu"></div>
 
-        <div class="car-track">
-          <article class="p-card">
-            <div class="p-img"><img src="items/1.png" alt=""></div>
-            <div class="p-badges">
-              <span class="badge">BEST PRICE</span>
+        <div class="hero-right">
+          <div class="hero-cards">
+            <div class="hero-card">
+              <div class="hero-arrow left">
+                <i class="fa-solid fa-chevron-left"></i>
+              </div>
+              <div class="hero-banner">
+                <img src="images/banner1.png" alt="" />
+              </div>
             </div>
-            <div class="p-price">2799 ₾ <span class="smally">2999 ₾</span></div>
-            <div class="p-name">Samsung Galaxy S25 Ultra</div>
-            <div class="p-actions">
-              <button class="p-mini" type="button"><i class="fas fa-exchange-alt"></i></button>
-              <button class="p-add" type="button"><i class="fa-solid fa-cart-shopping"></i> დამატება</button>
-            </div>
-          </article>
 
-          <article class="p-card">
-            <div class="p-img"><img src="items/2.png" alt=""></div>
-            <div class="p-badges">
-              <span class="badge">BEST PRICE</span>
+            <div class="hero-card">
+              <div class="hero-banner">
+                <img src="images/banner2.png" alt="" />
+              </div>
             </div>
-            <div class="black p-price"><span class="bl">1249 ₾</span></div>
-            <div class="p-name">Google Pixel 7 Pro 5G</div>
-            <div class="p-actions">
-              <button class="p-mini" type="button"><i class="fas fa-exchange-alt"></i></button>
-              <button class="p-add" type="button"><i class="fa-solid fa-cart-shopping"></i> დამატება</button>
-            </div>
-          </article>
 
-          <article class="p-card">
-            <div class="p-img"><img src="items/3.png" alt=""></div>
-            <div class="p-badges">
-              <span class="badge">BEST PRICE</span>
+            <div class="hero-card">
+              <div class="hero-banner">
+                <img src="images/banner3.png" alt="" />
+              </div>
             </div>
-            <div class="p-price">1099 ₾ <span class="smally">1399 ₾</span></div>
-            <div class="p-name">RayBan Meta WayFarer</div>
-            <div class="p-actions">
-              <button class="p-mini" type="button"><i class="fas fa-exchange-alt"></i></button>
-              <button class="p-add" type="button"><i class="fa-solid fa-cart-shopping"></i> დამატება</button>
-            </div>
-          </article>
 
-          <article class="p-card">
-            <div class="p-img"><img src="items/4.png" alt=""></div>
-            <div class="p-badges">
-              <span class="badge">BEST PRICE</span>
+            <div class="hero-card">
+              <div class="hero-arrow right">
+                <i class="fa-solid fa-angle-right"></i>
+              </div>
+              <div class="hero-banner">
+                <img src="images/banner4.png" alt="" />
+              </div>
             </div>
-            <div class="p-price">549 ₾ <span class="smally">799 ₾</span></div>
-            <div class="p-name">Motorola Moto Edge 50</div>
-            <div class="p-actions">
-              <button class="p-mini" type="button"><i class="fas fa-exchange-alt"></i></button>
-              <button class="p-add" type="button"><i class="fa-solid fa-cart-shopping"></i> დამატება</button>
-            </div>
-          </article>
+          </div>
+        </div>
+      </section>
 
-          <article class="p-card">
-            <div class="p-img"><img src="items/5.png" alt=""></div>
-            <div class="p-badges">
-              <span class="badge">BEST PRICE</span>
-            </div>
-            <div class="p-price">3799 ₾ <span class="smally">4199 ₾</span></div>
-            <div class="p-name">DJI Mini 5 Pro Combo</div>
-            <div class="p-actions">
-              <button class="p-mini" type="button"><i class="fas fa-exchange-alt"></i></button>
-              <button class="p-add" type="button"><i class="fa-solid fa-cart-shopping"></i> დამატება</button>
-            </div>
-          </article>
-
-          <article class="p-card">
-            <div class="p-img"><img src="items/6.png" alt=""></div>
-            <div class="p-badges">
-              <span class="badge">BEST PRICE</span>
-            </div>
-            <div class="p-price">4699 ₾ <span class="smally">5499 ₾</span></div>
-            <div class="p-name">Asus ROG Strix 16</div>
-            <div class="p-actions">
-              <button class="p-mini" type="button"><i class="fas fa-exchange-alt"></i></button>
-              <button class="p-add" type="button"><i class="fa-solid fa-cart-shopping"></i> დამატება</button>
-            </div>
-          </article>
+      <section class="wrap section">
+        <div class="section-head">
+          <h2 class="section-title">ზუმერული საჩუქრების ერთი სული აქვთ</h2>
         </div>
 
-        <button class="car-btn right" type="button"><i class="fa-solid fa-angle-right"></i></button>
-      </div>
-    </section>
+        <div class="carousel">
+          <button class="car-btn left" type="button">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
 
-    <section class="wrap banner-row">
-      <div class="big-banner banner1">
-        <img src="images/big-banner1.1.png" alt="">
-        <img src="images/big-banner1.2.png" alt="">
-        <img src="images/big-banner1.3.png" alt="">
-      </div>
-    </section>
+          <div class="car-track">
+            <article class="p-card">
+              <div class="p-img"><img src="items/1.png" alt="" /></div>
+              <div class="p-badges">
+                <span class="badge">BEST PRICE</span>
+              </div>
+              <div class="p-price">
+                2799 ₾ <span class="smally">2999 ₾</span>
+              </div>
+              <div class="p-name">Samsung Galaxy S25 Ultra</div>
+              <div class="p-actions">
+                <button class="p-mini" type="button">
+                  <i class="fas fa-exchange-alt"></i>
+                </button>
+                <button class="p-add" type="button">
+                  <i class="fa-solid fa-cart-shopping"></i> დამატება
+                </button>
+              </div>
+            </article>
 
-    <section class="wrap section">
-      <div class="section-head">
-        <h2 class="section-title">აღმოაჩინე რა საჩუქარი გელოდება</h2>
-      </div>
+            <article class="p-card">
+              <div class="p-img"><img src="items/2.png" alt="" /></div>
+              <div class="p-badges">
+                <span class="badge">BEST PRICE</span>
+              </div>
+              <div class="black p-price"><span class="bl">1249 ₾</span></div>
+              <div class="p-name">Google Pixel 7 Pro 5G</div>
+              <div class="p-actions">
+                <button class="p-mini" type="button">
+                  <i class="fas fa-exchange-alt"></i>
+                </button>
+                <button class="p-add" type="button">
+                  <i class="fa-solid fa-cart-shopping"></i> დამატება
+                </button>
+              </div>
+            </article>
 
-      <div class="carousel">
-        <button class="car-btn left" type="button"><i class="fa-solid fa-chevron-left"></i></button>
+            <article class="p-card">
+              <div class="p-img"><img src="items/3.png" alt="" /></div>
+              <div class="p-badges">
+                <span class="badge">BEST PRICE</span>
+              </div>
+              <div class="p-price">
+                1099 ₾ <span class="smally">1399 ₾</span>
+              </div>
+              <div class="p-name">RayBan Meta WayFarer</div>
+              <div class="p-actions">
+                <button class="p-mini" type="button">
+                  <i class="fas fa-exchange-alt"></i>
+                </button>
+                <button class="p-add" type="button">
+                  <i class="fa-solid fa-cart-shopping"></i> დამატება
+                </button>
+              </div>
+            </article>
 
-        <div class="car-track">
-          <article class="p-card">
-            <div class="p-img"><img src="items/7.png" alt=""></div>
-            <div class="p-badges">
-              <span class="badge">GIFTS</span>
-            </div>
-            <div class="p-price">5099 ₾ <span class="smally">5299 ₾</span></div>
-            <div class="p-name">Apple iPhone 16 Pro Max | 1TB Desert Titanium</div>
-            <div class="p-actions">
-              <button class="p-mini" type="button"><i class="fas fa-exchange-alt"></i></button>
-              <button class="p-add" type="button"><i class="fa-solid fa-cart-shopping"></i> დამატება</button>
-            </div>
-          </article>
+            <article class="p-card">
+              <div class="p-img"><img src="items/4.png" alt="" /></div>
+              <div class="p-badges">
+                <span class="badge">BEST PRICE</span>
+              </div>
+              <div class="p-price">549 ₾ <span class="smally">799 ₾</span></div>
+              <div class="p-name">Motorola Moto Edge 50</div>
+              <div class="p-actions">
+                <button class="p-mini" type="button">
+                  <i class="fas fa-exchange-alt"></i>
+                </button>
+                <button class="p-add" type="button">
+                  <i class="fa-solid fa-cart-shopping"></i> დამატება
+                </button>
+              </div>
+            </article>
 
-          <article class="p-card">
-            <div class="p-img"><img src="items/8.png" alt=""></div>
-            <div class="p-badges">
-              <span class="badge">GIFTS</span>
-            </div>
-            <div class="black p-price"><span class="bl">1999 ₾</span></div>
-            <div class="p-name">Motorola RAZR 60 5G 8/256GB Green</div>
-            <div class="p-actions">
-              <button class="p-mini" type="button"><i class="fas fa-exchange-alt"></i></button>
-              <button class="p-add" type="button"><i class="fa-solid fa-cart-shopping"></i> დამატება</button>
-            </div>
-          </article>
+            <article class="p-card">
+              <div class="p-img"><img src="items/5.png" alt="" /></div>
+              <div class="p-badges">
+                <span class="badge">BEST PRICE</span>
+              </div>
+              <div class="p-price">
+                3799 ₾ <span class="smally">4199 ₾</span>
+              </div>
+              <div class="p-name">DJI Mini 5 Pro Combo</div>
+              <div class="p-actions">
+                <button class="p-mini" type="button">
+                  <i class="fas fa-exchange-alt"></i>
+                </button>
+                <button class="p-add" type="button">
+                  <i class="fa-solid fa-cart-shopping"></i> დამატება
+                </button>
+              </div>
+            </article>
 
-          <article class="p-card">
-            <div class="p-img"><img src="items/9.png" alt=""></div>
-            <div class="p-badges">
-              <span class="badge">GIFTS</span>
-            </div>
-            <div class="p-price"><span class="bl">1999 ₾</span></div>
-            <div class="p-name">Motorola RAZR 60 5G 8/256GB White</div>
-            <div class="p-actions">
-              <button class="p-mini" type="button"><i class="fas fa-exchange-alt"></i></button>
-              <button class="p-add" type="button"><i class="fa-solid fa-cart-shopping"></i> დამატება</button>
-            </div>
-          </article>
+            <article class="p-card">
+              <div class="p-img"><img src="items/6.png" alt="" /></div>
+              <div class="p-badges">
+                <span class="badge">BEST PRICE</span>
+              </div>
+              <div class="p-price">
+                4699 ₾ <span class="smally">5499 ₾</span>
+              </div>
+              <div class="p-name">Asus ROG Strix 16</div>
+              <div class="p-actions">
+                <button class="p-mini" type="button">
+                  <i class="fas fa-exchange-alt"></i>
+                </button>
+                <button class="p-add" type="button">
+                  <i class="fa-solid fa-cart-shopping"></i> დამატება
+                </button>
+              </div>
+            </article>
+          </div>
 
-          <article class="p-card">
-            <div class="p-img"><img src="items/10.png" alt=""></div>
-            <div class="p-badges">
-              <span class="badge">GIFTS</span>
-            </div>
-            <div class="p-price"><span class="bl">1329 ₾</span></div>
-            <div class="p-name">Canon EOS 2000D EF-S 18-55 IS II KIT Black</div>
-            <div class="p-actions">
-              <button class="p-mini" type="button"><i class="fas fa-exchange-alt"></i></button>
-              <button class="p-add" type="button"><i class="fa-solid fa-cart-shopping"></i> დამატება</button>
-            </div>
-          </article>
+          <button class="car-btn right" type="button">
+            <i class="fa-solid fa-angle-right"></i>
+          </button>
+        </div>
+      </section>
 
-          <article class="p-card">
-            <div class="p-img"><img src="items/11.png" alt=""></div>
-            <div class="p-badges">
-              <span class="badge">GIFTS</span>
-            </div>
-            <div class="p-price"><span class="bl">1829 ₾</span></div>
-            <div class="p-name">Canon EOS 250D EF-S 18-55 mm Black</div>
-            <div class="p-actions">
-              <button class="p-mini" type="button"><i class="fas fa-exchange-alt"></i></button>
-              <button class="p-add" type="button"><i class="fa-solid fa-cart-shopping"></i> დამატება</button>
-            </div>
-          </article>
+      <section class="wrap banner-row">
+        <div class="big-banner banner1">
+          <img src="images/big-banner1.1.png" alt="" />
+          <img src="images/big-banner1.2.png" alt="" />
+          <img src="images/big-banner1.3.png" alt="" />
+        </div>
+      </section>
 
-          <article class="p-card">
-            <div class="p-img"><img src="items/11.png" alt=""></div>
-            <div class="p-badges">
-              <span class="badge">GIFTS</span>
-            </div>
-            <div class="p-price"><span class="bl">1229 ₾</span></div>
-            <div class="p-name">Canon EOS 4000D EF-S 18-55 III KIT Black</div>
-            <div class="p-actions">
-              <button class="p-mini" type="button"><i class="fas fa-exchange-alt"></i></button>
-              <button class="p-add" type="button"><i class="fa-solid fa-cart-shopping"></i> დამატება</button>
-            </div>
-          </article>
+      <section class="wrap section">
+        <div class="section-head">
+          <h2 class="section-title">აღმოაჩინე რა საჩუქარი გელოდება</h2>
         </div>
 
-        <button class="car-btn right" type="button"><i class="fa-solid fa-angle-right"></i></button>
-      </div>
-    </section>
+        <div class="carousel">
+          <button class="car-btn left" type="button">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
 
-    <section class="wrap banner-row">
-      <div class="big-banner banner2">
-        <img src="images/big-banner2.1.png" alt="">
-        <img src="images/big-banner2.2.png" alt="">
-        <img src="images/big-banner2.3.png" alt="">
-      </div>
-    </section>
+          <div class="car-track">
+            <article class="p-card">
+              <div class="p-img"><img src="items/7.png" alt="" /></div>
+              <div class="p-badges">
+                <span class="badge">GIFTS</span>
+              </div>
+              <div class="p-price">
+                5099 ₾ <span class="smally">5299 ₾</span>
+              </div>
+              <div class="p-name">
+                Apple iPhone 16 Pro Max | 1TB Desert Titanium
+              </div>
+              <div class="p-actions">
+                <button class="p-mini" type="button">
+                  <i class="fas fa-exchange-alt"></i>
+                </button>
+                <button class="p-add" type="button">
+                  <i class="fa-solid fa-cart-shopping"></i> დამატება
+                </button>
+              </div>
+            </article>
 
+            <article class="p-card">
+              <div class="p-img"><img src="items/8.png" alt="" /></div>
+              <div class="p-badges">
+                <span class="badge">GIFTS</span>
+              </div>
+              <div class="black p-price"><span class="bl">1999 ₾</span></div>
+              <div class="p-name">Motorola RAZR 60 5G 8/256GB Green</div>
+              <div class="p-actions">
+                <button class="p-mini" type="button">
+                  <i class="fas fa-exchange-alt"></i>
+                </button>
+                <button class="p-add" type="button">
+                  <i class="fa-solid fa-cart-shopping"></i> დამატება
+                </button>
+              </div>
+            </article>
 
-    <section class="wrap section">
-      <div class="section-head">
-        <h2 class="section-title">ახალი მოდელები</h2>
-      </div>
+            <article class="p-card">
+              <div class="p-img"><img src="items/9.png" alt="" /></div>
+              <div class="p-badges">
+                <span class="badge">GIFTS</span>
+              </div>
+              <div class="p-price"><span class="bl">1999 ₾</span></div>
+              <div class="p-name">Motorola RAZR 60 5G 8/256GB White</div>
+              <div class="p-actions">
+                <button class="p-mini" type="button">
+                  <i class="fas fa-exchange-alt"></i>
+                </button>
+                <button class="p-add" type="button">
+                  <i class="fa-solid fa-cart-shopping"></i> დამატება
+                </button>
+              </div>
+            </article>
 
-      <div class="carousel">
-        <button class="car-btn left" type="button"><i class="fa-solid fa-chevron-left"></i></button>
+            <article class="p-card">
+              <div class="p-img"><img src="items/10.png" alt="" /></div>
+              <div class="p-badges">
+                <span class="badge">GIFTS</span>
+              </div>
+              <div class="p-price"><span class="bl">1329 ₾</span></div>
+              <div class="p-name">
+                Canon EOS 2000D EF-S 18-55 IS II KIT Black
+              </div>
+              <div class="p-actions">
+                <button class="p-mini" type="button">
+                  <i class="fas fa-exchange-alt"></i>
+                </button>
+                <button class="p-add" type="button">
+                  <i class="fa-solid fa-cart-shopping"></i> დამატება
+                </button>
+              </div>
+            </article>
 
-        <div class="car-track">
-          <article class="p-card">
-            <div class="p-img"><img src="items/12.png" alt=""></div>
-            <div class="p-badges">
-              <span class="badge">NEW</span>
-            </div>
-            <div class="p-price"><span class="bl">279 ₾</span></div>
-            <div class="p-name">Kodak Digital Photo Frame 10 Inch RCF-1018W Wood gain</div>
-            <div class="p-actions">
-              <button class="p-mini" type="button"><i class="fas fa-exchange-alt"></i></button>
-              <button class="p-add" type="button"><i class="fa-solid fa-cart-shopping"></i> დამატება</button>
-            </div>
-          </article>
+            <article class="p-card">
+              <div class="p-img"><img src="items/11.png" alt="" /></div>
+              <div class="p-badges">
+                <span class="badge">GIFTS</span>
+              </div>
+              <div class="p-price"><span class="bl">1829 ₾</span></div>
+              <div class="p-name">Canon EOS 250D EF-S 18-55 mm Black</div>
+              <div class="p-actions">
+                <button class="p-mini" type="button">
+                  <i class="fas fa-exchange-alt"></i>
+                </button>
+                <button class="p-add" type="button">
+                  <i class="fa-solid fa-cart-shopping"></i> დამატება
+                </button>
+              </div>
+            </article>
 
-          <article class="p-card">
-            <div class="p-img"><img src="items/13.png" alt=""></div>
-            <div class="p-badges">
-              <span class="badge">NEW</span>
-            </div>
-            <div class="black p-price"><span class="bl">189 ₾</span></div>
-            <div class="p-name">Sony PS5 Game Call of Duty Black Ops 7</div>
-            <div class="p-actions">
-              <button class="p-mini" type="button"><i class="fas fa-exchange-alt"></i></button>
-              <button class="p-add" type="button"><i class="fa-solid fa-cart-shopping"></i> დამატება</button>
-            </div>
-          </article>
+            <article class="p-card">
+              <div class="p-img"><img src="items/11.png" alt="" /></div>
+              <div class="p-badges">
+                <span class="badge">GIFTS</span>
+              </div>
+              <div class="p-price"><span class="bl">1229 ₾</span></div>
+              <div class="p-name">Canon EOS 4000D EF-S 18-55 III KIT Black</div>
+              <div class="p-actions">
+                <button class="p-mini" type="button">
+                  <i class="fas fa-exchange-alt"></i>
+                </button>
+                <button class="p-add" type="button">
+                  <i class="fa-solid fa-cart-shopping"></i> დამატება
+                </button>
+              </div>
+            </article>
+          </div>
 
-          <article class="p-card">
-            <div class="p-img"><img src="items/14.png" alt=""></div>
-            <div class="p-badges">
-              <span class="badge">NEW</span>
-            </div>
-            <div class="p-price"><span class="bl">799 ₾</span></div>
-            <div class="p-name">Petsuper Smart Pet Drying Box PD01 White</div>
-            <div class="p-actions">
-              <button class="p-mini" type="button"><i class="fas fa-exchange-alt"></i></button>
-              <button class="p-add" type="button"><i class="fa-solid fa-cart-shopping"></i> დამატება</button>
-            </div>
-          </article>
+          <button class="car-btn right" type="button">
+            <i class="fa-solid fa-angle-right"></i>
+          </button>
+        </div>
+      </section>
 
-          <article class="p-card">
-            <div class="p-img"><img src="items/15.png" alt=""></div>
-            <div class="p-badges">
-              <span class="badge">BEST PRICE</span>
-            </div>
-            <div class="p-price">3799 ₾ <span class="smally">4199 ₾</span></div>
-            <div class="p-name">DJI Mini 5 Pro Combo Plus With RC 2 Grey</div>
-            <div class="p-actions">
-              <button class="p-mini" type="button"><i class="fas fa-exchange-alt"></i></button>
-              <button class="p-add" type="button"><i class="fa-solid fa-cart-shopping"></i> დამატება</button>
-            </div>
-          </article>
+      <section class="wrap banner-row">
+        <div class="big-banner banner2">
+          <img src="images/big-banner2.1.png" alt="" />
+          <img src="images/big-banner2.2.png" alt="" />
+          <img src="images/big-banner2.3.png" alt="" />
+        </div>
+      </section>
 
-          <article class="p-card">
-            <div class="p-img"><img src="items/16.png" alt=""></div>
-            <div class="p-badges">
-              <span class="badge">NEW</span>
-            </div>
-            <div class="p-price"><span class="bl">69 ₾</span></div>
-            <div class="p-name">BMW Magsafe Tricolor Metal Logo Iphone 17</div>
-            <div class="p-actions">
-              <button class="p-mini" type="button"><i class="fas fa-exchange-alt"></i></button>
-              <button class="p-add" type="button"><i class="fa-solid fa-cart-shopping"></i> დამატება</button>
-            </div>
-          </article>
-
-          <article class="p-card">
-            <div class="p-img"><img src="items/17.png" alt=""></div>
-            <div class="p-badges">
-              <span class="badge">NEW</span>
-            </div>
-            <div class="p-price"><span class="bl">1199 ₾</span></div>
-            <div class="p-name">DJI Mic 3 2 TX plus 1 RX plus Charging Case Grey</div>
-            <div class="p-actions">
-              <button class="p-mini" type="button"><i class="fas fa-exchange-alt"></i></button>
-              <button class="p-add" type="button"><i class="fa-solid fa-cart-shopping"></i> დამატება</button>
-            </div>
-          </article>
+      <section class="wrap section">
+        <div class="section-head">
+          <h2 class="section-title">ახალი მოდელები</h2>
         </div>
 
-        <button class="car-btn right" type="button"><i class="fa-solid fa-angle-right"></i></button>
-      </div>
-    </section>
+        <div class="carousel">
+          <button class="car-btn left" type="button">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
 
-    <section class="wrap banner-row">
-      <div class="big-banner banner3">
-        <img src="images/big-banner3.png" alt="">
-      </div>
-    </section>
+          <div class="car-track">
+            <article class="p-card">
+              <div class="p-img"><img src="items/12.png" alt="" /></div>
+              <div class="p-badges">
+                <span class="badge">NEW</span>
+              </div>
+              <div class="p-price"><span class="bl">279 ₾</span></div>
+              <div class="p-name">
+                Kodak Digital Photo Frame 10 Inch RCF-1018W Wood gain
+              </div>
+              <div class="p-actions">
+                <button class="p-mini" type="button">
+                  <i class="fas fa-exchange-alt"></i>
+                </button>
+                <button class="p-add" type="button">
+                  <i class="fa-solid fa-cart-shopping"></i> დამატება
+                </button>
+              </div>
+            </article>
 
+            <article class="p-card">
+              <div class="p-img"><img src="items/13.png" alt="" /></div>
+              <div class="p-badges">
+                <span class="badge">NEW</span>
+              </div>
+              <div class="black p-price"><span class="bl">189 ₾</span></div>
+              <div class="p-name">Sony PS5 Game Call of Duty Black Ops 7</div>
+              <div class="p-actions">
+                <button class="p-mini" type="button">
+                  <i class="fas fa-exchange-alt"></i>
+                </button>
+                <button class="p-add" type="button">
+                  <i class="fa-solid fa-cart-shopping"></i> დამატება
+                </button>
+              </div>
+            </article>
 
-    <section class="wrap section">
-      <div class="section-head">
-        <h2 class="section-title">ლეპტოპები</h2>
-      </div>
+            <article class="p-card">
+              <div class="p-img"><img src="items/14.png" alt="" /></div>
+              <div class="p-badges">
+                <span class="badge">NEW</span>
+              </div>
+              <div class="p-price"><span class="bl">799 ₾</span></div>
+              <div class="p-name">Petsuper Smart Pet Drying Box PD01 White</div>
+              <div class="p-actions">
+                <button class="p-mini" type="button">
+                  <i class="fas fa-exchange-alt"></i>
+                </button>
+                <button class="p-add" type="button">
+                  <i class="fa-solid fa-cart-shopping"></i> დამატება
+                </button>
+              </div>
+            </article>
 
-      <div class="carousel">
-        <button class="car-btn left" type="button"><i class="fa-solid fa-chevron-left"></i></button>
+            <article class="p-card">
+              <div class="p-img"><img src="items/15.png" alt="" /></div>
+              <div class="p-badges">
+                <span class="badge">BEST PRICE</span>
+              </div>
+              <div class="p-price">
+                3799 ₾ <span class="smally">4199 ₾</span>
+              </div>
+              <div class="p-name">DJI Mini 5 Pro Combo Plus With RC 2 Grey</div>
+              <div class="p-actions">
+                <button class="p-mini" type="button">
+                  <i class="fas fa-exchange-alt"></i>
+                </button>
+                <button class="p-add" type="button">
+                  <i class="fa-solid fa-cart-shopping"></i> დამატება
+                </button>
+              </div>
+            </article>
 
-        <div class="car-track">
-          <article class="p-card">
-            <div class="p-img"><img src="items/18.png" alt=""></div>
-            <div class="p-badges">
-            </div>
-            <div class="p-price"><span class="bl">1099 ₾</span></div>
-            <div class="p-name">Acer Aspire Lite 16 AL16-52P Intel Core</div>
-            <div class="p-actions">
-              <button class="p-mini" type="button"><i class="fas fa-exchange-alt"></i></button>
-              <button class="p-add" type="button"><i class="fa-solid fa-cart-shopping"></i> დამატება</button>
-            </div>
-          </article>
+            <article class="p-card">
+              <div class="p-img"><img src="items/16.png" alt="" /></div>
+              <div class="p-badges">
+                <span class="badge">NEW</span>
+              </div>
+              <div class="p-price"><span class="bl">69 ₾</span></div>
+              <div class="p-name">
+                BMW Magsafe Tricolor Metal Logo Iphone 17
+              </div>
+              <div class="p-actions">
+                <button class="p-mini" type="button">
+                  <i class="fas fa-exchange-alt"></i>
+                </button>
+                <button class="p-add" type="button">
+                  <i class="fa-solid fa-cart-shopping"></i> დამატება
+                </button>
+              </div>
+            </article>
 
-          <article class="p-card">
-            <div class="p-img"><img src="items/19.png" alt=""></div>
-            <div class="p-badges">
-            </div>
-            <div class="black p-price"><span class="bl">4299 ₾</span></div>
-            <div class="p-name">Apple Macbook Air 13 inch 2025 M4 Chip 10c</div>
-            <div class="p-actions">
-              <button class="p-mini" type="button"><i class="fas fa-exchange-alt"></i></button>
-              <button class="p-add" type="button"><i class="fa-solid fa-cart-shopping"></i> დამატება</button>
-            </div>
-          </article>
+            <article class="p-card">
+              <div class="p-img"><img src="items/17.png" alt="" /></div>
+              <div class="p-badges">
+                <span class="badge">NEW</span>
+              </div>
+              <div class="p-price"><span class="bl">1199 ₾</span></div>
+              <div class="p-name">
+                DJI Mic 3 2 TX plus 1 RX plus Charging Case Grey
+              </div>
+              <div class="p-actions">
+                <button class="p-mini" type="button">
+                  <i class="fas fa-exchange-alt"></i>
+                </button>
+                <button class="p-add" type="button">
+                  <i class="fa-solid fa-cart-shopping"></i> დამატება
+                </button>
+              </div>
+            </article>
+          </div>
 
-          <article class="p-card">
-            <div class="p-img"><img src="items/20.png" alt=""></div>
-            <div class="p-badges">
-            </div>
-            <div class="p-price"><span class="bl">1849 ₾</span></div>
-            <div class="p-name">Acer Extensa 15 EX215-57 NX.EJBER.004, Intel Core</div>
-            <div class="p-actions">
-              <button class="p-mini" type="button"><i class="fas fa-exchange-alt"></i></button>
-              <button class="p-add" type="button"><i class="fa-solid fa-cart-shopping"></i> დამატება</button>
-            </div>
-          </article>
+          <button class="car-btn right" type="button">
+            <i class="fa-solid fa-angle-right"></i>
+          </button>
+        </div>
+      </section>
 
-          <article class="p-card">
-            <div class="p-img"><img src="items/21.png" alt=""></div>
-            <div class="p-badges">
-            </div>
-            <div class="p-price"><span class="bl">1799 ₾</span></div>
-            <div class="p-name">Honor MagicBook X14 5301ALWG, Intel Core</div>
-            <div class="p-actions">
-              <button class="p-mini" type="button"><i class="fas fa-exchange-alt"></i></button>
-              <button class="p-add" type="button"><i class="fa-solid fa-cart-shopping"></i> დამატება</button>
-            </div>
-          </article>
+      <section class="wrap banner-row">
+        <div class="big-banner banner3">
+          <img src="images/big-banner3.png" alt="" />
+        </div>
+      </section>
 
-          <article class="p-card">
-            <div class="p-img"><img src="items/22.png" alt=""></div>
-            <div class="p-badges">
-            </div>
-            <div class="p-price">1999 ₾<span class="smally">2199 ₾</span></div>
-            <div class="p-name">Lenovo Ideapad Slim 3, Intel UHD Graphics</div>
-            <div class="p-actions">
-              <button class="p-mini" type="button"><i class="fas fa-exchange-alt"></i></button>
-              <button class="p-add" type="button"><i class="fa-solid fa-cart-shopping"></i> დამატება</button>
-            </div>
-          </article>
-
-          <article class="p-card">
-            <div class="p-img"><img src="items/23.png" alt=""></div>
-            <div class="p-badges">
-            </div>
-            <div class="p-price">2199 ₾<span class="smally">2349 ₾</span></div>
-            <div class="p-name">Asus VivoBook S 16, Intel UHD Graphics</div>
-            <div class="p-actions">
-              <button class="p-mini" type="button"><i class="fas fa-exchange-alt"></i></button>
-              <button class="p-add" type="button"><i class="fa-solid fa-cart-shopping"></i> დამატება</button>
-            </div>
-          </article>
+      <section class="wrap section">
+        <div class="section-head">
+          <h2 class="section-title">ლეპტოპები</h2>
         </div>
 
-        <button class="car-btn right" type="button"><i class="fa-solid fa-angle-right"></i></button>
-      </div>
-    </section>
+        <div class="carousel">
+          <button class="car-btn left" type="button">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
 
+          <div class="car-track">
+            <article class="p-card">
+              <div class="p-img"><img src="items/18.png" alt="" /></div>
+              <div class="p-badges"></div>
+              <div class="p-price"><span class="bl">1099 ₾</span></div>
+              <div class="p-name">Acer Aspire Lite 16 AL16-52P Intel Core</div>
+              <div class="p-actions">
+                <button class="p-mini" type="button">
+                  <i class="fas fa-exchange-alt"></i>
+                </button>
+                <button class="p-add" type="button">
+                  <i class="fa-solid fa-cart-shopping"></i> დამატება
+                </button>
+              </div>
+            </article>
 
-    <section class="wrap banner-row">
-      <div class="big-banner banner4">
-        <img src="images/big-banner4.png" alt="">
-      </div>
-    </section>
+            <article class="p-card">
+              <div class="p-img"><img src="items/19.png" alt="" /></div>
+              <div class="p-badges"></div>
+              <div class="black p-price"><span class="bl">4299 ₾</span></div>
+              <div class="p-name">
+                Apple Macbook Air 13 inch 2025 M4 Chip 10c
+              </div>
+              <div class="p-actions">
+                <button class="p-mini" type="button">
+                  <i class="fas fa-exchange-alt"></i>
+                </button>
+                <button class="p-add" type="button">
+                  <i class="fa-solid fa-cart-shopping"></i> დამატება
+                </button>
+              </div>
+            </article>
 
+            <article class="p-card">
+              <div class="p-img"><img src="items/20.png" alt="" /></div>
+              <div class="p-badges"></div>
+              <div class="p-price"><span class="bl">1849 ₾</span></div>
+              <div class="p-name">
+                Acer Extensa 15 EX215-57 NX.EJBER.004, Intel Core
+              </div>
+              <div class="p-actions">
+                <button class="p-mini" type="button">
+                  <i class="fas fa-exchange-alt"></i>
+                </button>
+                <button class="p-add" type="button">
+                  <i class="fa-solid fa-cart-shopping"></i> დამატება
+                </button>
+              </div>
+            </article>
 
-    <section class="wrap section">
-      <div class="section-head">
-        <h2 class="section-title">ტაბები</h2>
-      </div>
+            <article class="p-card">
+              <div class="p-img"><img src="items/21.png" alt="" /></div>
+              <div class="p-badges"></div>
+              <div class="p-price"><span class="bl">1799 ₾</span></div>
+              <div class="p-name">Honor MagicBook X14 5301ALWG, Intel Core</div>
+              <div class="p-actions">
+                <button class="p-mini" type="button">
+                  <i class="fas fa-exchange-alt"></i>
+                </button>
+                <button class="p-add" type="button">
+                  <i class="fa-solid fa-cart-shopping"></i> დამატება
+                </button>
+              </div>
+            </article>
 
-      <div class="carousel">
-        <button class="car-btn left" type="button"><i class="fa-solid fa-chevron-left"></i></button>
+            <article class="p-card">
+              <div class="p-img"><img src="items/22.png" alt="" /></div>
+              <div class="p-badges"></div>
+              <div class="p-price">
+                1999 ₾<span class="smally">2199 ₾</span>
+              </div>
+              <div class="p-name">
+                Lenovo Ideapad Slim 3, Intel UHD Graphics
+              </div>
+              <div class="p-actions">
+                <button class="p-mini" type="button">
+                  <i class="fas fa-exchange-alt"></i>
+                </button>
+                <button class="p-add" type="button">
+                  <i class="fa-solid fa-cart-shopping"></i> დამატება
+                </button>
+              </div>
+            </article>
 
-        <div class="car-track">
-          <article class="p-card">
-            <div class="p-img"><img src="items/24.png" alt=""></div>
-            <div class="p-badges">
-              <span class="badge">BEST PRICE</span>
-            </div>
-            <div class="p-price">249 ₾ <span class="smally">329 ₾</span></div>
-            <div class="p-name">Honor Pad X7 8.7 Wi-Fi 4/128GB 5504ADQH Grey</div>
-            <div class="p-actions">
-              <button class="p-mini" type="button"><i class="fas fa-exchange-alt"></i></button>
-              <button class="p-add" type="button"><i class="fa-solid fa-cart-shopping"></i> დამატება</button>
-            </div>
-          </article>
+            <article class="p-card">
+              <div class="p-img"><img src="items/23.png" alt="" /></div>
+              <div class="p-badges"></div>
+              <div class="p-price">
+                2199 ₾<span class="smally">2349 ₾</span>
+              </div>
+              <div class="p-name">Asus VivoBook S 16, Intel UHD Graphics</div>
+              <div class="p-actions">
+                <button class="p-mini" type="button">
+                  <i class="fas fa-exchange-alt"></i>
+                </button>
+                <button class="p-add" type="button">
+                  <i class="fa-solid fa-cart-shopping"></i> დამატება
+                </button>
+              </div>
+            </article>
+          </div>
 
-          <article class="p-card">
-            <div class="p-img"><img src="items/25.png" alt=""></div>
-            <div class="p-badges">
-            </div>
-            <div class="black p-price"><span class="bl">1599 ₾</span></div>
-            <div class="p-name">OnePlus Pad 3 12GB RAM 256GB Version Silver</div>
-            <div class="p-actions">
-              <button class="p-mini" type="button"><i class="fas fa-exchange-alt"></i></button>
-              <button class="p-add" type="button"><i class="fa-solid fa-cart-shopping"></i> დამატება</button>
-            </div>
-          </article>
+          <button class="car-btn right" type="button">
+            <i class="fa-solid fa-angle-right"></i>
+          </button>
+        </div>
+      </section>
 
-          <article class="p-card">
-            <div class="p-img"><img src="items/26.png" alt=""></div>
-            <div class="p-badges">
-            </div>
-            <div class="p-price"><span class="bl">319 ₾</span></div>
-            <div class="p-name">Lenovo Tab One 8.7 4/128GB WIFI Luna Grey</div>
-            <div class="p-actions">
-              <button class="p-mini" type="button"><i class="fas fa-exchange-alt"></i></button>
-              <button class="p-add" type="button"><i class="fa-solid fa-cart-shopping"></i> დამატება</button>
-            </div>
-          </article>
+      <section class="wrap banner-row">
+        <div class="big-banner banner4">
+          <img src="images/big-banner4.png" alt="" />
+        </div>
+      </section>
 
-          <article class="p-card">
-            <div class="p-img"><img src="items/27.png" alt=""></div>
-            <div class="p-badges">
-            </div>
-            <div class="p-price">519 ₾<span class="smally">579 ₾</span></div>
-            <div class="p-name">Xiaomi Redmi Pad 2 6/128GB Wi-Fi Grey</div>
-            <div class="p-actions">
-              <button class="p-mini" type="button"><i class="fas fa-exchange-alt"></i></button>
-              <button class="p-add" type="button"><i class="fa-solid fa-cart-shopping"></i> დამატება</button>
-            </div>
-          </article>
-
-          <article class="p-card">
-            <div class="p-img"><img src="items/28.png" alt=""></div>
-            <div class="p-badges">
-            </div>
-            <div class="p-price"><span class="bl">629 ₾</span></div>
-            <div class="p-name">Honor Pad X9a 11.5 LTE 8/256 Grey</div>
-            <div class="p-actions">
-              <button class="p-mini" type="button"><i class="fas fa-exchange-alt"></i></button>
-              <button class="p-add" type="button"><i class="fa-solid fa-cart-shopping"></i> დამატება</button>
-            </div>
-          </article>
-
-          <article class="p-card">
-            <div class="p-img"><img src="items/29.png" alt=""></div>
-            <div class="p-badges">
-            </div>
-            <div class="p-price"><span class="bl">1129 ₾</span></div>
-            <div class="p-name">Apple iPad 2025 11th Generation 11 inch 128GB</div>
-            <div class="p-actions">
-              <button class="p-mini" type="button"><i class="fas fa-exchange-alt"></i></button>
-              <button class="p-add" type="button"><i class="fa-solid fa-cart-shopping"></i> დამატება</button>
-            </div>
-          </article>
+      <section class="wrap section">
+        <div class="section-head">
+          <h2 class="section-title">ტაბები</h2>
         </div>
 
-        <button class="car-btn right" type="button"><i class="fa-solid fa-angle-right"></i></button>
-      </div>
-    </section>
+        <div class="carousel">
+          <button class="car-btn left" type="button">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
 
-    <section class="wrap banner-row">
-      <div class="big-banner banner5">
-        <img src="images/big-banner5.png" alt="">
-      </div>
-    </section>
+          <div class="car-track">
+            <article class="p-card">
+              <div class="p-img"><img src="items/24.png" alt="" /></div>
+              <div class="p-badges">
+                <span class="badge">BEST PRICE</span>
+              </div>
+              <div class="p-price">249 ₾ <span class="smally">329 ₾</span></div>
+              <div class="p-name">
+                Honor Pad X7 8.7 Wi-Fi 4/128GB 5504ADQH Grey
+              </div>
+              <div class="p-actions">
+                <button class="p-mini" type="button">
+                  <i class="fas fa-exchange-alt"></i>
+                </button>
+                <button class="p-add" type="button">
+                  <i class="fa-solid fa-cart-shopping"></i> დამატება
+                </button>
+              </div>
+            </article>
 
+            <article class="p-card">
+              <div class="p-img"><img src="items/25.png" alt="" /></div>
+              <div class="p-badges"></div>
+              <div class="black p-price"><span class="bl">1599 ₾</span></div>
+              <div class="p-name">
+                OnePlus Pad 3 12GB RAM 256GB Version Silver
+              </div>
+              <div class="p-actions">
+                <button class="p-mini" type="button">
+                  <i class="fas fa-exchange-alt"></i>
+                </button>
+                <button class="p-add" type="button">
+                  <i class="fa-solid fa-cart-shopping"></i> დამატება
+                </button>
+              </div>
+            </article>
 
-    <section class="wrap section">
-      <div class="section-head">
-        <h2 class="section-title">ტელევიზორები</h2>
-      </div>
+            <article class="p-card">
+              <div class="p-img"><img src="items/26.png" alt="" /></div>
+              <div class="p-badges"></div>
+              <div class="p-price"><span class="bl">319 ₾</span></div>
+              <div class="p-name">
+                Lenovo Tab One 8.7 4/128GB WIFI Luna Grey
+              </div>
+              <div class="p-actions">
+                <button class="p-mini" type="button">
+                  <i class="fas fa-exchange-alt"></i>
+                </button>
+                <button class="p-add" type="button">
+                  <i class="fa-solid fa-cart-shopping"></i> დამატება
+                </button>
+              </div>
+            </article>
 
-      <div class="carousel">
-        <button class="car-btn left" type="button"><i class="fa-solid fa-chevron-left"></i></button>
+            <article class="p-card">
+              <div class="p-img"><img src="items/27.png" alt="" /></div>
+              <div class="p-badges"></div>
+              <div class="p-price">519 ₾<span class="smally">579 ₾</span></div>
+              <div class="p-name">Xiaomi Redmi Pad 2 6/128GB Wi-Fi Grey</div>
+              <div class="p-actions">
+                <button class="p-mini" type="button">
+                  <i class="fas fa-exchange-alt"></i>
+                </button>
+                <button class="p-add" type="button">
+                  <i class="fa-solid fa-cart-shopping"></i> დამატება
+                </button>
+              </div>
+            </article>
 
-        <div class="car-track">
-          <article class="p-card">
-            <div class="p-img"><img src="items/30.png" alt=""></div>
-            <div class="p-badges">
-            </div>
-            <div class="p-price"><span class="bl">499 ₾</span></div>
-            <div class="p-name">Xiaomi TV A 32 2025 EU</div>
-            <div class="p-actions">
-              <button class="p-mini" type="button"><i class="fas fa-exchange-alt"></i></button>
-              <button class="p-add" type="button"><i class="fa-solid fa-cart-shopping"></i> დამატება</button>
-            </div>
-          </article>
+            <article class="p-card">
+              <div class="p-img"><img src="items/28.png" alt="" /></div>
+              <div class="p-badges"></div>
+              <div class="p-price"><span class="bl">629 ₾</span></div>
+              <div class="p-name">Honor Pad X9a 11.5 LTE 8/256 Grey</div>
+              <div class="p-actions">
+                <button class="p-mini" type="button">
+                  <i class="fas fa-exchange-alt"></i>
+                </button>
+                <button class="p-add" type="button">
+                  <i class="fa-solid fa-cart-shopping"></i> დამატება
+                </button>
+              </div>
+            </article>
 
-          <article class="p-card">
-            <div class="p-img"><img src="items/31.png" alt=""></div>
-            <div class="p-badges">
-            </div>
-            <div class="black p-price">879 ₾<span class="smally">999 ₾</span></div>
-            <div class="p-name">Samsung TV UE438072UXXH EU Black</div>
-            <div class="p-actions">
-              <button class="p-mini" type="button"><i class="fas fa-exchange-alt"></i></button>
-              <button class="p-add" type="button"><i class="fa-solid fa-cart-shopping"></i> დამატება</button>
-            </div>
-          </article>
+            <article class="p-card">
+              <div class="p-img"><img src="items/29.png" alt="" /></div>
+              <div class="p-badges"></div>
+              <div class="p-price"><span class="bl">1129 ₾</span></div>
+              <div class="p-name">
+                Apple iPad 2025 11th Generation 11 inch 128GB
+              </div>
+              <div class="p-actions">
+                <button class="p-mini" type="button">
+                  <i class="fas fa-exchange-alt"></i>
+                </button>
+                <button class="p-add" type="button">
+                  <i class="fa-solid fa-cart-shopping"></i> დამატება
+                </button>
+              </div>
+            </article>
+          </div>
 
-          <article class="p-card">
-            <div class="p-img"><img src="items/32.png" alt=""></div>
-            <div class="p-badges">
-            </div>
-            <div class="p-price">999 ₾<span class="smally">1149 ₾</span></div>
-            <div class="p-name">Samsung TV QE43Q60DAUXXH EU</div>
-            <div class="p-actions">
-              <button class="p-mini" type="button"><i class="fas fa-exchange-alt"></i></button>
-              <button class="p-add" type="button"><i class="fa-solid fa-cart-shopping"></i> დამატება</button>
-            </div>
-          </article>
+          <button class="car-btn right" type="button">
+            <i class="fa-solid fa-angle-right"></i>
+          </button>
+        </div>
+      </section>
 
-          <article class="p-card">
-            <div class="p-img"><img src="items/33.png" alt=""></div>
-            <div class="p-badges">
-            </div>
-            <div class="p-price">1499 ₾<span class="smally">1649 ₾</span></div>
-            <div class="p-name">Samsung TV UE65DU7172UXXH EU</div>
-            <div class="p-actions">
-              <button class="p-mini" type="button"><i class="fas fa-exchange-alt"></i></button>
-              <button class="p-add" type="button"><i class="fa-solid fa-cart-shopping"></i> დამატება</button>
-            </div>
-          </article>
+      <section class="wrap banner-row">
+        <div class="big-banner banner5">
+          <img src="images/big-banner5.png" alt="" />
+        </div>
+      </section>
 
-          <article class="p-card">
-            <div class="p-img"><img src="items/34.png" alt=""></div>
-            <div class="p-badges">
-            </div>
-            <div class="p-price">1599 ₾<span class="smally">1849 ₾</span></div>
-            <div class="p-name">Samsung TV UE65DU8072UXXH EU</div>
-            <div class="p-actions">
-              <button class="p-mini" type="button"><i class="fas fa-exchange-alt"></i></button>
-              <button class="p-add" type="button"><i class="fa-solid fa-cart-shopping"></i> დამატება</button>
-            </div>
-          </article>
-
-          <article class="p-card">
-            <div class="p-img"><img src="items/35.png" alt=""></div>
-            <div class="p-badges">
-            </div>
-            <div class="p-price"><span class="bl">2999 ₾</span></div>
-            <div class="p-name">Samsung TV QE55QN90DAUTXZT EU</div>
-            <div class="p-actions">
-              <button class="p-mini" type="button"><i class="fas fa-exchange-alt"></i></button>
-              <button class="p-add" type="button"><i class="fa-solid fa-cart-shopping"></i> დამატება</button>
-            </div>
-          </article>
+      <section class="wrap section">
+        <div class="section-head">
+          <h2 class="section-title">ტელევიზორები</h2>
         </div>
 
-        <button class="car-btn right" type="button"><i class="fa-solid fa-angle-right"></i></button>
-      </div>
-    </section>
+        <div class="carousel">
+          <button class="car-btn left" type="button">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
 
-    <section class="wrap banner-row">
-      <div class="big-banner banner6">
-        <img src="images/big-banner6.1.png" alt="">
-        <img src="images/big-banner6.2.png" alt="">
-        <img src="images/big-banner6.3.png" alt="">
-      </div>
-    </section>
+          <div class="car-track">
+            <article class="p-card">
+              <div class="p-img"><img src="items/30.png" alt="" /></div>
+              <div class="p-badges"></div>
+              <div class="p-price"><span class="bl">499 ₾</span></div>
+              <div class="p-name">Xiaomi TV A 32 2025 EU</div>
+              <div class="p-actions">
+                <button class="p-mini" type="button">
+                  <i class="fas fa-exchange-alt"></i>
+                </button>
+                <button class="p-add" type="button">
+                  <i class="fa-solid fa-cart-shopping"></i> დამატება
+                </button>
+              </div>
+            </article>
 
+            <article class="p-card">
+              <div class="p-img"><img src="items/31.png" alt="" /></div>
+              <div class="p-badges"></div>
+              <div class="black p-price">
+                879 ₾<span class="smally">999 ₾</span>
+              </div>
+              <div class="p-name">Samsung TV UE438072UXXH EU Black</div>
+              <div class="p-actions">
+                <button class="p-mini" type="button">
+                  <i class="fas fa-exchange-alt"></i>
+                </button>
+                <button class="p-add" type="button">
+                  <i class="fa-solid fa-cart-shopping"></i> დამატება
+                </button>
+              </div>
+            </article>
 
-    <section class="wrap section">
-      <div class="section-head">
-        <h2 class="section-title">ბრენდები</h2>
-      </div>
+            <article class="p-card">
+              <div class="p-img"><img src="items/32.png" alt="" /></div>
+              <div class="p-badges"></div>
+              <div class="p-price">999 ₾<span class="smally">1149 ₾</span></div>
+              <div class="p-name">Samsung TV QE43Q60DAUXXH EU</div>
+              <div class="p-actions">
+                <button class="p-mini" type="button">
+                  <i class="fas fa-exchange-alt"></i>
+                </button>
+                <button class="p-add" type="button">
+                  <i class="fa-solid fa-cart-shopping"></i> დამატება
+                </button>
+              </div>
+            </article>
 
-      <div class="carousel brands">
-        <button class="car-btn left upp" type="button"><i class="fa-solid fa-chevron-left"></i></button>
+            <article class="p-card">
+              <div class="p-img"><img src="items/33.png" alt="" /></div>
+              <div class="p-badges"></div>
+              <div class="p-price">
+                1499 ₾<span class="smally">1649 ₾</span>
+              </div>
+              <div class="p-name">Samsung TV UE65DU7172UXXH EU</div>
+              <div class="p-actions">
+                <button class="p-mini" type="button">
+                  <i class="fas fa-exchange-alt"></i>
+                </button>
+                <button class="p-add" type="button">
+                  <i class="fa-solid fa-cart-shopping"></i> დამატება
+                </button>
+              </div>
+            </article>
 
-        <div class="car-track brands">
-          <article class="p-card brandy">
-            <div class="p-img onee"><img src="images/brand1.png" alt=""></div>
-          </article>
+            <article class="p-card">
+              <div class="p-img"><img src="items/34.png" alt="" /></div>
+              <div class="p-badges"></div>
+              <div class="p-price">
+                1599 ₾<span class="smally">1849 ₾</span>
+              </div>
+              <div class="p-name">Samsung TV UE65DU8072UXXH EU</div>
+              <div class="p-actions">
+                <button class="p-mini" type="button">
+                  <i class="fas fa-exchange-alt"></i>
+                </button>
+                <button class="p-add" type="button">
+                  <i class="fa-solid fa-cart-shopping"></i> დამატება
+                </button>
+              </div>
+            </article>
 
-          <article class="p-card brandy">
-            <div class="p-img"><img src="images/brand2.png" alt=""></div>
-          </article>
+            <article class="p-card">
+              <div class="p-img"><img src="items/35.png" alt="" /></div>
+              <div class="p-badges"></div>
+              <div class="p-price"><span class="bl">2999 ₾</span></div>
+              <div class="p-name">Samsung TV QE55QN90DAUTXZT EU</div>
+              <div class="p-actions">
+                <button class="p-mini" type="button">
+                  <i class="fas fa-exchange-alt"></i>
+                </button>
+                <button class="p-add" type="button">
+                  <i class="fa-solid fa-cart-shopping"></i> დამატება
+                </button>
+              </div>
+            </article>
+          </div>
 
-          <article class="p-card brandy">
-            <div class="p-img"><img src="images/brand3.png" alt=""></div>
-          </article>
+          <button class="car-btn right" type="button">
+            <i class="fa-solid fa-angle-right"></i>
+          </button>
+        </div>
+      </section>
 
-          <article class="p-card brandy">
-            <div class="p-img"><img src="images/brand4.png" alt=""></div>
-          </article>
+      <section class="wrap banner-row">
+        <div class="big-banner banner6">
+          <img src="images/big-banner6.1.png" alt="" />
+          <img src="images/big-banner6.2.png" alt="" />
+          <img src="images/big-banner6.3.png" alt="" />
+        </div>
+      </section>
 
-          <article class="p-card brandy">
-            <div class="p-img"><img src="images/brand5.png" alt=""></div>
-          </article>
-
-          <article class="p-card brandy">
-            <div class="p-img"><img src="images/brand6.png" alt=""></div>
-          </article>
+      <section class="wrap section">
+        <div class="section-head">
+          <h2 class="section-title">ბრენდები</h2>
         </div>
 
-        <button class="car-btn right upp" type="button"><i class="fa-solid fa-angle-right"></i></button>
-      </div>
-    </section>
+        <div class="carousel brands">
+          <button class="car-btn left upp" type="button">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
 
-    <section class="wrap banner-row">
-      <div class="big-banner banner7">
-        <img src="images/big-banner7.png" alt="">
-      </div>
-    </section>
+          <div class="car-track brands">
+            <article class="p-card brandy">
+              <div class="p-img onee">
+                <img src="images/brand1.png" alt="" />
+              </div>
+            </article>
 
+            <article class="p-card brandy">
+              <div class="p-img"><img src="images/brand2.png" alt="" /></div>
+            </article>
 
-    <section class="wrap section">
-      <div class="section-head">
-        <h2 class="section-title">ყურსასმენები</h2>
-      </div>
+            <article class="p-card brandy">
+              <div class="p-img"><img src="images/brand3.png" alt="" /></div>
+            </article>
 
-      <div class="carousel">
-        <button class="car-btn left" type="button"><i class="fa-solid fa-chevron-left"></i></button>
+            <article class="p-card brandy">
+              <div class="p-img"><img src="images/brand4.png" alt="" /></div>
+            </article>
 
-        <div class="car-track">
-          <article class="p-card">
-            <div class="p-img"><img src="items/36.png" alt=""></div>
-            <div class="p-badges">
-              <span class="badge">BEST PRICE</span>
-            </div>
-            <div class="p-price"><span class="bl">849 ₾</span></div>
-            <div class="p-name">Apple AirPods Pro 3 MFHP4 White</div>
-            <div class="p-actions">
-              <button class="p-mini" type="button"><i class="fas fa-exchange-alt"></i></button>
-              <button class="p-add" type="button"><i class="fa-solid fa-cart-shopping"></i> დამატება</button>
-            </div>
-          </article>
+            <article class="p-card brandy">
+              <div class="p-img"><img src="images/brand5.png" alt="" /></div>
+            </article>
 
-          <article class="p-card">
-            <div class="p-img"><img src="items/37.png" alt=""></div>
-            <div class="p-badges">
-            </div>
-            <div class="black p-price">2399 ₾<span class="smally">2999 ₾</span></div>
-            <div class="p-name">Bang & Olufsen Beoplay H95 Wireless ANC</div>
-            <div class="p-actions">
-              <button class="p-mini" type="button"><i class="fas fa-exchange-alt"></i></button>
-              <button class="p-add" type="button"><i class="fa-solid fa-cart-shopping"></i> დამატება</button>
-            </div>
-          </article>
+            <article class="p-card brandy">
+              <div class="p-img"><img src="images/brand6.png" alt="" /></div>
+            </article>
+          </div>
 
-          <article class="p-card">
-            <div class="p-img"><img src="items/38.png" alt=""></div>
-            <div class="p-badges">
-            </div>
-            <div class="p-price"><span class="bl">39 ₾</span></div>
-            <div class="p-name">Xiaomi Redmi Buds 6 Play White</div>
-            <div class="p-actions">
-              <button class="p-mini" type="button"><i class="fas fa-exchange-alt"></i></button>
-              <button class="p-add" type="button"><i class="fa-solid fa-cart-shopping"></i> დამატება</button>
-            </div>
-          </article>
+          <button class="car-btn right upp" type="button">
+            <i class="fa-solid fa-angle-right"></i>
+          </button>
+        </div>
+      </section>
 
-          <article class="p-card">
-            <div class="p-img"><img src="items/39.png" alt=""></div>
-            <div class="p-badges">
-            </div>
-            <div class="p-price">1649<span class="smally">1799 ₾</span></div>
-            <div class="p-name">Apple AirPods Max Gen 2 Blue</div>
-            <div class="p-actions">
-              <button class="p-mini" type="button"><i class="fas fa-exchange-alt"></i></button>
-              <button class="p-add" type="button"><i class="fa-solid fa-cart-shopping"></i> დამატება</button>
-            </div>
-          </article>
+      <section class="wrap banner-row">
+        <div class="big-banner banner7">
+          <img src="images/big-banner7.png" alt="" />
+        </div>
+      </section>
 
-          <article class="p-card">
-            <div class="p-img"><img src="items/40.png" alt=""></div>
-            <div class="p-badges">
-            </div>
-            <div class="p-price"><span class="bl">129 ₾</span></div>
-            <div class="p-name">Nothing Buds CMF Neckband Pro Dark Grey</div>
-            <div class="p-actions">
-              <button class="p-mini" type="button"><i class="fas fa-exchange-alt"></i></button>
-              <button class="p-add" type="button"><i class="fa-solid fa-cart-shopping"></i> დამატება</button>
-            </div>
-          </article>
-
-          <article class="p-card">
-            <div class="p-img"><img src="items/41.png" alt=""></div>
-            <div class="p-badges">
-            </div>
-            <div class="p-price"><span class="bl">849 ₾</span></div>
-            <div class="p-name">Beats Studio Powerbeats Pro 2 Electric Orange</div>
-            <div class="p-actions">
-              <button class="p-mini" type="button"><i class="fas fa-exchange-alt"></i></button>
-              <button class="p-add" type="button"><i class="fa-solid fa-cart-shopping"></i> დამატება</button>
-            </div>
-          </article>
+      <section class="wrap section">
+        <div class="section-head">
+          <h2 class="section-title">ყურსასმენები</h2>
         </div>
 
-        <button class="car-btn right" type="button"><i class="fa-solid fa-angle-right"></i></button>
-      </div>
-    </section>
+        <div class="carousel">
+          <button class="car-btn left" type="button">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
 
-    <section class="wrap banner-row">
-      <div class="big-banner banner8">
-        <img src="images/big-banner8.png" alt="">
-      </div>
-    </section>
+          <div class="car-track">
+            <article class="p-card">
+              <div class="p-img"><img src="items/36.png" alt="" /></div>
+              <div class="p-badges">
+                <span class="badge">BEST PRICE</span>
+              </div>
+              <div class="p-price"><span class="bl">849 ₾</span></div>
+              <div class="p-name">Apple AirPods Pro 3 MFHP4 White</div>
+              <div class="p-actions">
+                <button class="p-mini" type="button">
+                  <i class="fas fa-exchange-alt"></i>
+                </button>
+                <button class="p-add" type="button">
+                  <i class="fa-solid fa-cart-shopping"></i> დამატება
+                </button>
+              </div>
+            </article>
 
+            <article class="p-card">
+              <div class="p-img"><img src="items/37.png" alt="" /></div>
+              <div class="p-badges"></div>
+              <div class="black p-price">
+                2399 ₾<span class="smally">2999 ₾</span>
+              </div>
+              <div class="p-name">Bang & Olufsen Beoplay H95 Wireless ANC</div>
+              <div class="p-actions">
+                <button class="p-mini" type="button">
+                  <i class="fas fa-exchange-alt"></i>
+                </button>
+                <button class="p-add" type="button">
+                  <i class="fa-solid fa-cart-shopping"></i> დამატება
+                </button>
+              </div>
+            </article>
 
-    <section class="wrap section">
-      <div class="section-head">
-        <h2 class="section-title">სმარტ საათები</h2>
-      </div>
+            <article class="p-card">
+              <div class="p-img"><img src="items/38.png" alt="" /></div>
+              <div class="p-badges"></div>
+              <div class="p-price"><span class="bl">39 ₾</span></div>
+              <div class="p-name">Xiaomi Redmi Buds 6 Play White</div>
+              <div class="p-actions">
+                <button class="p-mini" type="button">
+                  <i class="fas fa-exchange-alt"></i>
+                </button>
+                <button class="p-add" type="button">
+                  <i class="fa-solid fa-cart-shopping"></i> დამატება
+                </button>
+              </div>
+            </article>
 
-      <div class="carousel">
-        <button class="car-btn left" type="button"><i class="fa-solid fa-chevron-left"></i></button>
+            <article class="p-card">
+              <div class="p-img"><img src="items/39.png" alt="" /></div>
+              <div class="p-badges"></div>
+              <div class="p-price">1649<span class="smally">1799 ₾</span></div>
+              <div class="p-name">Apple AirPods Max Gen 2 Blue</div>
+              <div class="p-actions">
+                <button class="p-mini" type="button">
+                  <i class="fas fa-exchange-alt"></i>
+                </button>
+                <button class="p-add" type="button">
+                  <i class="fa-solid fa-cart-shopping"></i> დამატება
+                </button>
+              </div>
+            </article>
 
-        <div class="car-track">
-          <article class="p-card">
-            <div class="p-img"><img src="items/42.png" alt=""></div>
-            <div class="p-badges">
-              <span class="badge">BEST PRICE</span>
-            </div>
-            <div class="p-price">2599 ₾ <span class="smally">2899 ₾</span></div>
-            <div class="p-name">Apple Watch Ultra 3 Natural Titanium Case</div>
-            <div class="p-actions">
-              <button class="p-mini" type="button"><i class="fas fa-exchange-alt"></i></button>
-              <button class="p-add" type="button"><i class="fa-solid fa-cart-shopping"></i> დამატება</button>
-            </div>
-          </article>
+            <article class="p-card">
+              <div class="p-img"><img src="items/40.png" alt="" /></div>
+              <div class="p-badges"></div>
+              <div class="p-price"><span class="bl">129 ₾</span></div>
+              <div class="p-name">Nothing Buds CMF Neckband Pro Dark Grey</div>
+              <div class="p-actions">
+                <button class="p-mini" type="button">
+                  <i class="fas fa-exchange-alt"></i>
+                </button>
+                <button class="p-add" type="button">
+                  <i class="fa-solid fa-cart-shopping"></i> დამატება
+                </button>
+              </div>
+            </article>
 
-          <article class="p-card">
-            <div class="p-img"><img src="items/43.png" alt=""></div>
-            <div class="p-badges">
-              <span class="badge">BEST PRICE</span>
-            </div>
-            <div class="black p-price">1099 ₾<span class="smally">1499 ₾</span></div>
-            <div class="p-name">Samsung L705 Galaxy Watch Ultra Titanium</div>
-            <div class="p-actions">
-              <button class="p-mini" type="button"><i class="fas fa-exchange-alt"></i></button>
-              <button class="p-add" type="button"><i class="fa-solid fa-cart-shopping"></i> დამატება</button>
-            </div>
-          </article>
+            <article class="p-card">
+              <div class="p-img"><img src="items/41.png" alt="" /></div>
+              <div class="p-badges"></div>
+              <div class="p-price"><span class="bl">849 ₾</span></div>
+              <div class="p-name">
+                Beats Studio Powerbeats Pro 2 Electric Orange
+              </div>
+              <div class="p-actions">
+                <button class="p-mini" type="button">
+                  <i class="fas fa-exchange-alt"></i>
+                </button>
+                <button class="p-add" type="button">
+                  <i class="fa-solid fa-cart-shopping"></i> დამატება
+                </button>
+              </div>
+            </article>
+          </div>
 
-          <article class="p-card">
-            <div class="p-img"><img src="items/44.png" alt=""></div>
-            <div class="p-badges">
-              <span class="badge">BEST PRICE</span>
-            </div>
-            <div class="p-price">899 ₾<span class="smally">989 ₾</span></div>
-            <div class="p-name">Samsung L705 Galaxy Watch Ultra Titanium</div>
-            <div class="p-actions">
-              <button class="p-mini" type="button"><i class="fas fa-exchange-alt"></i></button>
-              <button class="p-add" type="button"><i class="fa-solid fa-cart-shopping"></i> დამატება</button>
-            </div>
-          </article>
+          <button class="car-btn right" type="button">
+            <i class="fa-solid fa-angle-right"></i>
+          </button>
+        </div>
+      </section>
 
-          <article class="p-card">
-            <div class="p-img"><img src="items/45.png" alt=""></div>
-            <div class="p-badges">
-              <span class="badge">BEST PRICE</span>
-            </div>
-            <div class="p-price">699 ₾<span class="smally">899 ₾</span></div>
-            <div class="p-name">Samsung Galaxy L330 44mm Watch 8 Silver</div>
-            <div class="p-actions">
-              <button class="p-mini" type="button"><i class="fas fa-exchange-alt"></i></button>
-              <button class="p-add" type="button"><i class="fa-solid fa-cart-shopping"></i> დამატება</button>
-            </div>
-          </article>
+      <section class="wrap banner-row">
+        <div class="big-banner banner8">
+          <img src="images/big-banner8.png" alt="" />
+        </div>
+      </section>
 
-          <article class="p-card">
-            <div class="p-img"><img src="items/46.png" alt=""></div>
-            <div class="p-badges">
-            </div>
-            <div class="p-price"><span class="bl">799 ₾</span></div>
-            <div class="p-name">Oneplus Watch 3 Emerald Titanium</div>
-            <div class="p-actions">
-              <button class="p-mini" type="button"><i class="fas fa-exchange-alt"></i></button>
-              <button class="p-add" type="button"><i class="fa-solid fa-cart-shopping"></i> დამატება</button>
-            </div>
-          </article>
-
-          <article class="p-card">
-            <div class="p-img"><img src="items/47.png" alt=""></div>
-            <div class="p-badges">
-            </div>
-            <div class="p-price"><span class="bl">449 ₾</span></div>
-            <div class="p-name">Nothing CMF Watch 3 Pro Orange</div>
-            <div class="p-actions">
-              <button class="p-mini" type="button"><i class="fas fa-exchange-alt"></i></button>
-              <button class="p-add" type="button"><i class="fa-solid fa-cart-shopping"></i> დამატება</button>
-            </div>
-          </article>
+      <section class="wrap section">
+        <div class="section-head">
+          <h2 class="section-title">სმარტ საათები</h2>
         </div>
 
-        <button class="car-btn right" type="button"><i class="fa-solid fa-angle-right"></i></button>
-      </div>
-    </section>
+        <div class="carousel">
+          <button class="car-btn left" type="button">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
 
-    <section class="wrap banner-row">
-      <div class="big-banner banner9">
-        <div class="top-row">
-          <img src="images/big-banner9.1.png" alt="">
-          <img src="images/big-banner9.2.png" alt="">
-          <img src="images/big-banner9.3.png" alt="">
+          <div class="car-track">
+            <article class="p-card">
+              <div class="p-img"><img src="items/42.png" alt="" /></div>
+              <div class="p-badges">
+                <span class="badge">BEST PRICE</span>
+              </div>
+              <div class="p-price">
+                2599 ₾ <span class="smally">2899 ₾</span>
+              </div>
+              <div class="p-name">
+                Apple Watch Ultra 3 Natural Titanium Case
+              </div>
+              <div class="p-actions">
+                <button class="p-mini" type="button">
+                  <i class="fas fa-exchange-alt"></i>
+                </button>
+                <button class="p-add" type="button">
+                  <i class="fa-solid fa-cart-shopping"></i> დამატება
+                </button>
+              </div>
+            </article>
+
+            <article class="p-card">
+              <div class="p-img"><img src="items/43.png" alt="" /></div>
+              <div class="p-badges">
+                <span class="badge">BEST PRICE</span>
+              </div>
+              <div class="black p-price">
+                1099 ₾<span class="smally">1499 ₾</span>
+              </div>
+              <div class="p-name">Samsung L705 Galaxy Watch Ultra Titanium</div>
+              <div class="p-actions">
+                <button class="p-mini" type="button">
+                  <i class="fas fa-exchange-alt"></i>
+                </button>
+                <button class="p-add" type="button">
+                  <i class="fa-solid fa-cart-shopping"></i> დამატება
+                </button>
+              </div>
+            </article>
+
+            <article class="p-card">
+              <div class="p-img"><img src="items/44.png" alt="" /></div>
+              <div class="p-badges">
+                <span class="badge">BEST PRICE</span>
+              </div>
+              <div class="p-price">899 ₾<span class="smally">989 ₾</span></div>
+              <div class="p-name">Samsung L705 Galaxy Watch Ultra Titanium</div>
+              <div class="p-actions">
+                <button class="p-mini" type="button">
+                  <i class="fas fa-exchange-alt"></i>
+                </button>
+                <button class="p-add" type="button">
+                  <i class="fa-solid fa-cart-shopping"></i> დამატება
+                </button>
+              </div>
+            </article>
+
+            <article class="p-card">
+              <div class="p-img"><img src="items/45.png" alt="" /></div>
+              <div class="p-badges">
+                <span class="badge">BEST PRICE</span>
+              </div>
+              <div class="p-price">699 ₾<span class="smally">899 ₾</span></div>
+              <div class="p-name">Samsung Galaxy L330 44mm Watch 8 Silver</div>
+              <div class="p-actions">
+                <button class="p-mini" type="button">
+                  <i class="fas fa-exchange-alt"></i>
+                </button>
+                <button class="p-add" type="button">
+                  <i class="fa-solid fa-cart-shopping"></i> დამატება
+                </button>
+              </div>
+            </article>
+
+            <article class="p-card">
+              <div class="p-img"><img src="items/46.png" alt="" /></div>
+              <div class="p-badges"></div>
+              <div class="p-price"><span class="bl">799 ₾</span></div>
+              <div class="p-name">Oneplus Watch 3 Emerald Titanium</div>
+              <div class="p-actions">
+                <button class="p-mini" type="button">
+                  <i class="fas fa-exchange-alt"></i>
+                </button>
+                <button class="p-add" type="button">
+                  <i class="fa-solid fa-cart-shopping"></i> დამატება
+                </button>
+              </div>
+            </article>
+
+            <article class="p-card">
+              <div class="p-img"><img src="items/47.png" alt="" /></div>
+              <div class="p-badges"></div>
+              <div class="p-price"><span class="bl">449 ₾</span></div>
+              <div class="p-name">Nothing CMF Watch 3 Pro Orange</div>
+              <div class="p-actions">
+                <button class="p-mini" type="button">
+                  <i class="fas fa-exchange-alt"></i>
+                </button>
+                <button class="p-add" type="button">
+                  <i class="fa-solid fa-cart-shopping"></i> დამატება
+                </button>
+              </div>
+            </article>
+          </div>
+
+          <button class="car-btn right" type="button">
+            <i class="fa-solid fa-angle-right"></i>
+          </button>
         </div>
-        <div class="bottom-row">
-          <img src="images/big-banner9.4.png" alt="">
-          <img src="images/big-banner9.5.png" alt="">
-          <img src="images/big-banner9.6.png" alt="">
+      </section>
+
+      <section class="wrap banner-row">
+        <div class="big-banner banner9">
+          <div class="top-row">
+            <img src="images/big-banner9.1.png" alt="" />
+            <img src="images/big-banner9.2.png" alt="" />
+            <img src="images/big-banner9.3.png" alt="" />
+          </div>
+          <div class="bottom-row">
+            <img src="images/big-banner9.4.png" alt="" />
+            <img src="images/big-banner9.5.png" alt="" />
+            <img src="images/big-banner9.6.png" alt="" />
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-
-    <section class="wrap section">
-      <div class="section-head">
-        <h2 class="section-title">ფოტო და ვიდეო</h2>
-      </div>
-
-      <div class="carousel">
-        <button class="car-btn left" type="button"><i class="fa-solid fa-chevron-left"></i></button>
-
-        <div class="car-track">
-          <article class="p-card">
-            <div class="p-img"><img src="items/48.png" alt=""></div>
-            <div class="p-badges">
-            </div>
-            <div class="p-price"><span class="bl">299 ₾</span></div>
-            <div class="p-name">Instax Mini 12 Instant Camera Blossom Pink</div>
-            <div class="p-actions">
-              <button class="p-mini" type="button"><i class="fas fa-exchange-alt"></i></button>
-              <button class="p-add" type="button"><i class="fa-solid fa-cart-shopping"></i> დამატება</button>
-            </div>
-          </article>
-
-          <article class="p-card">
-            <div class="p-img"><img src="items/49.png" alt=""></div>
-            <div class="p-badges">
-              <span class="badge">BEST PRICE</span>
-            </div>
-            <div class="black p-price">1099 ₾<span class="smally">1399 ₾</span></div>
-            <div class="p-name">RayBan Meta WayFarer Matte Black/Graphite</div>
-            <div class="p-actions">
-              <button class="p-mini" type="button"><i class="fas fa-exchange-alt"></i></button>
-              <button class="p-add" type="button"><i class="fa-solid fa-cart-shopping"></i> დამატება</button>
-            </div>
-          </article>
-
-          <article class="p-card">
-            <div class="p-img"><img src="items/50.png" alt=""></div>
-            <div class="p-badges">
-              <span class="badge">BEST PRICE</span>
-            </div>
-            <div class="p-price">699 ₾<span class="smally">799 ₾</span></div>
-            <div class="p-name">DJI Neo White</div>
-            <div class="p-actions">
-              <button class="p-mini" type="button"><i class="fas fa-exchange-alt"></i></button>
-              <button class="p-add" type="button"><i class="fa-solid fa-cart-shopping"></i> დამატება</button>
-            </div>
-          </article>
-
-          <article class="p-card">
-            <div class="p-img"><img src="items/51.png" alt=""></div>
-            <div class="p-badges">
-              <span class="badge">GIFTS</span>
-            </div>
-            <div class="p-price"><span class="bl">1229 ₾</span></div>
-            <div class="p-name">Canon EOS 4000D EF-S 18-55 III KIT Black</div>
-            <div class="p-actions">
-              <button class="p-mini" type="button"><i class="fas fa-exchange-alt"></i></button>
-              <button class="p-add" type="button"><i class="fa-solid fa-cart-shopping"></i> დამატება</button>
-            </div>
-          </article>
-
-          <article class="p-card">
-            <div class="p-img"><img src="items/52.png" alt=""></div>
-            <div class="p-badges">
-            </div>
-            <div class="p-price"><span class="bl">2399 ₾</span></div>
-            <div class="p-name">DJI Osmo Pocket 3 Creator Combo Black</div>
-            <div class="p-actions">
-              <button class="p-mini" type="button"><i class="fas fa-exchange-alt"></i></button>
-              <button class="p-add" type="button"><i class="fa-solid fa-cart-shopping"></i> დამატება</button>
-            </div>
-          </article>
-
-          <article class="p-card">
-            <div class="p-img"><img src="items/53.png" alt=""></div>
-            <div class="p-badges">
-            </div>
-            <div class="p-price"><span class="bl">599 ₾</span></div>
-            <div class="p-name">Nothing CMF Watch 3 Pro Orange</div>
-            <div class="p-actions">
-              <button class="p-mini" type="button"><i class="fas fa-exchange-alt"></i></button>
-              <button class="p-add" type="button"><i class="fa-solid fa-cart-shopping"></i> დამატება</button>
-            </div>
-          </article>
-        </div>
-
-        <button class="car-btn right" type="button"><i class="fa-solid fa-angle-right"></i></button>
-      </div>
-    </section>
-
-    <section class="wrap banner-row">
-      <div class="big-banner banner10">
-        <img src="images/big-banner10.png" alt="">
-      </div>
-    </section>
-
-
-    <section class="wrap section">
-      <div class="section-head">
-        <h2 class="section-title">თამაშები</h2>
-      </div>
-
-      <div class="carousel">
-        <button class="car-btn left" type="button"><i class="fa-solid fa-chevron-left"></i></button>
-
-        <div class="car-track">
-          <article class="p-card">
-            <div class="p-img"><img src="items/54.png" alt=""></div>
-            <div class="p-badges">
-              <span class="badge">BEST PRICE</span>
-            </div>
-            <div class="p-price">159 ₾ <span class="smally">199 ₾</span></div>
-            <div class="p-name">EA Sports FC 26 Game For PS5</div>
-            <div class="p-actions">
-              <button class="p-mini" type="button"><i class="fas fa-exchange-alt"></i></button>
-              <button class="p-add" type="button"><i class="fa-solid fa-cart-shopping"></i> დამატება</button>
-            </div>
-          </article>
-
-          <article class="p-card">
-            <div class="p-img"><img src="items/55.png" alt=""></div>
-            <div class="p-badges">
-              <span class="badge">BEST PRICE</span>
-            </div>
-            <div class="black p-price"><span class="bl">149 ₾</span></div>
-            <div class="p-name">Mafia The Old Country Game For PS5</div>
-            <div class="p-actions">
-              <button class="p-mini" type="button"><i class="fas fa-exchange-alt"></i></button>
-              <button class="p-add" type="button"><i class="fa-solid fa-cart-shopping"></i> დამატება</button>
-            </div>
-          </article>
-
-          <article class="p-card">
-            <div class="p-img"><img src="items/56.png" alt=""></div>
-            <div class="p-badges">
-              <span class="badge">BEST PRICE</span>
-            </div>
-            <div class="p-price">109 ₾<span class="smally">139 ₾</span></div>
-            <div class="p-name">Monster Hunter Wilds Game for PS5</div>
-            <div class="p-actions">
-              <button class="p-mini" type="button"><i class="fas fa-exchange-alt"></i></button>
-              <button class="p-add" type="button"><i class="fa-solid fa-cart-shopping"></i> დამატება</button>
-            </div>
-          </article>
-
-          <article class="p-card">
-            <div class="p-img"><img src="items/57.png" alt=""></div>
-            <div class="p-badges">
-            </div>
-            <div class="p-price"><span class="bl">239 ₾</span></div>
-            <div class="p-name">Nintendo Switch 2 Game Legend of Zelda</div>
-            <div class="p-actions">
-              <button class="p-mini" type="button"><i class="fas fa-exchange-alt"></i></button>
-              <button class="p-add" type="button"><i class="fa-solid fa-cart-shopping"></i> დამატება</button>
-            </div>
-          </article>
-
-          <article class="p-card">
-            <div class="p-img"><img src="items/58.png" alt=""></div>
-            <div class="p-badges">
-              <span class="badge">NEW</span>
-            </div>
-            <div class="p-price"><span class="bl">249 ₾</span></div>
-            <div class="p-name">Ghost of Yotei Game For PS5</div>
-            <div class="p-actions">
-              <button class="p-mini" type="button"><i class="fas fa-exchange-alt"></i></button>
-              <button class="p-add" type="button"><i class="fa-solid fa-cart-shopping"></i> დამატება</button>
-            </div>
-          </article>
-
-          <article class="p-card">
-            <div class="p-img"><img src="items/59.png" alt=""></div>
-            <div class="p-badges">
-              <span class="badge">BEST PRICE</span>
-            </div>
-            <div class="p-price"><span class="bl">169 ₾</span></div>
-            <div class="p-name">Nintendo Switch 2 Game NBA 2K26</div>
-            <div class="p-actions">
-              <button class="p-mini" type="button"><i class="fas fa-exchange-alt"></i></button>
-              <button class="p-add" type="button"><i class="fa-solid fa-cart-shopping"></i> დამატება</button>
-            </div>
-          </article>
+      <section class="wrap section">
+        <div class="section-head">
+          <h2 class="section-title">ფოტო და ვიდეო</h2>
         </div>
 
-        <button class="car-btn right" type="button"><i class="fa-solid fa-angle-right"></i></button>
-      </div>
-    </section>
+        <div class="carousel">
+          <button class="car-btn left" type="button">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
 
+          <div class="car-track">
+            <article class="p-card">
+              <div class="p-img"><img src="items/48.png" alt="" /></div>
+              <div class="p-badges"></div>
+              <div class="p-price"><span class="bl">299 ₾</span></div>
+              <div class="p-name">
+                Instax Mini 12 Instant Camera Blossom Pink
+              </div>
+              <div class="p-actions">
+                <button class="p-mini" type="button">
+                  <i class="fas fa-exchange-alt"></i>
+                </button>
+                <button class="p-add" type="button">
+                  <i class="fa-solid fa-cart-shopping"></i> დამატება
+                </button>
+              </div>
+            </article>
 
-    <section class="wrap section">
-      <div class="section-head">
-        <h2 class="section-title">მტვერსასრუტები</h2>
-      </div>
+            <article class="p-card">
+              <div class="p-img"><img src="items/49.png" alt="" /></div>
+              <div class="p-badges">
+                <span class="badge">BEST PRICE</span>
+              </div>
+              <div class="black p-price">
+                1099 ₾<span class="smally">1399 ₾</span>
+              </div>
+              <div class="p-name">
+                RayBan Meta WayFarer Matte Black/Graphite
+              </div>
+              <div class="p-actions">
+                <button class="p-mini" type="button">
+                  <i class="fas fa-exchange-alt"></i>
+                </button>
+                <button class="p-add" type="button">
+                  <i class="fa-solid fa-cart-shopping"></i> დამატება
+                </button>
+              </div>
+            </article>
 
-      <div class="carousel">
-        <button class="car-btn left" type="button"><i class="fa-solid fa-chevron-left"></i></button>
+            <article class="p-card">
+              <div class="p-img"><img src="items/50.png" alt="" /></div>
+              <div class="p-badges">
+                <span class="badge">BEST PRICE</span>
+              </div>
+              <div class="p-price">699 ₾<span class="smally">799 ₾</span></div>
+              <div class="p-name">DJI Neo White</div>
+              <div class="p-actions">
+                <button class="p-mini" type="button">
+                  <i class="fas fa-exchange-alt"></i>
+                </button>
+                <button class="p-add" type="button">
+                  <i class="fa-solid fa-cart-shopping"></i> დამატება
+                </button>
+              </div>
+            </article>
 
-        <div class="car-track">
-          <article class="p-card">
-            <div class="p-img"><img src="items/60.png" alt=""></div>
-            <div class="p-badges">
-            </div>
-            <div class="p-price"><span class="bl">849 ₾</span></div>
-            <div class="p-name">Roborock Robot Vacuum Q10 VF White</div>
-            <div class="p-actions">
-              <button class="p-mini" type="button"><i class="fas fa-exchange-alt"></i></button>
-              <button class="p-add" type="button"><i class="fa-solid fa-cart-shopping"></i> დამატება</button>
-            </div>
-          </article>
+            <article class="p-card">
+              <div class="p-img"><img src="items/51.png" alt="" /></div>
+              <div class="p-badges">
+                <span class="badge">GIFTS</span>
+              </div>
+              <div class="p-price"><span class="bl">1229 ₾</span></div>
+              <div class="p-name">Canon EOS 4000D EF-S 18-55 III KIT Black</div>
+              <div class="p-actions">
+                <button class="p-mini" type="button">
+                  <i class="fas fa-exchange-alt"></i>
+                </button>
+                <button class="p-add" type="button">
+                  <i class="fa-solid fa-cart-shopping"></i> დამატება
+                </button>
+              </div>
+            </article>
 
-          <article class="p-card">
-            <div class="p-img"><img src="items/61.png" alt=""></div>
-            <div class="p-badges">
-            </div>
-            <div class="black p-price"><span class="bl">2699 ₾</span></div>
-            <div class="p-name">Dyson Vacuum Cleaner Detect Submarine Iron</div>
-            <div class="p-actions">
-              <button class="p-mini" type="button"><i class="fas fa-exchange-alt"></i></button>
-              <button class="p-add" type="button"><i class="fa-solid fa-cart-shopping"></i> დამატება</button>
-            </div>
-          </article>
+            <article class="p-card">
+              <div class="p-img"><img src="items/52.png" alt="" /></div>
+              <div class="p-badges"></div>
+              <div class="p-price"><span class="bl">2399 ₾</span></div>
+              <div class="p-name">DJI Osmo Pocket 3 Creator Combo Black</div>
+              <div class="p-actions">
+                <button class="p-mini" type="button">
+                  <i class="fas fa-exchange-alt"></i>
+                </button>
+                <button class="p-add" type="button">
+                  <i class="fa-solid fa-cart-shopping"></i> დამატება
+                </button>
+              </div>
+            </article>
 
-          <article class="p-card">
-            <div class="p-img"><img src="items/62.png" alt=""></div>
-            <div class="p-badges">
-            </div>
-            <div class="p-price"><span class="bl">2699 ₾</span></div>
-            <div class="p-name">Dreame Robot Vacuum L10s Pro Ultra White</div>
-            <div class="p-actions">
-              <button class="p-mini" type="button"><i class="fas fa-exchange-alt"></i></button>
-              <button class="p-add" type="button"><i class="fa-solid fa-cart-shopping"></i> დამატება</button>
-            </div>
-          </article>
+            <article class="p-card">
+              <div class="p-img"><img src="items/53.png" alt="" /></div>
+              <div class="p-badges"></div>
+              <div class="p-price"><span class="bl">599 ₾</span></div>
+              <div class="p-name">Nothing CMF Watch 3 Pro Orange</div>
+              <div class="p-actions">
+                <button class="p-mini" type="button">
+                  <i class="fas fa-exchange-alt"></i>
+                </button>
+                <button class="p-add" type="button">
+                  <i class="fa-solid fa-cart-shopping"></i> დამატება
+                </button>
+              </div>
+            </article>
+          </div>
 
-          <article class="p-card">
-            <div class="p-img"><img src="items/63.png" alt=""></div>
-            <div class="p-badges">
-              <span class="badge">BEST PRICE</span>
-            </div>
-            <div class="p-price"><span class="bl">2099 ₾</span></div>
-            <div class="p-name">Xiaomi Robot Vacuum 5 Pro White</div>
-            <div class="p-actions">
-              <button class="p-mini" type="button"><i class="fas fa-exchange-alt"></i></button>
-              <button class="p-add" type="button"><i class="fa-solid fa-cart-shopping"></i> დამატება</button>
-            </div>
-          </article>
+          <button class="car-btn right" type="button">
+            <i class="fa-solid fa-angle-right"></i>
+          </button>
+        </div>
+      </section>
 
-          <article class="p-card">
-            <div class="p-img"><img src="items/64.png" alt=""></div>
-            <div class="p-badges">
-            </div>
-            <div class="p-price"><span class="bl">1999 ₾</span></div>
-            <div class="p-name">Dyson Wash G1 Wet Floor Cleaner Black/Blue</div>
-            <div class="p-actions">
-              <button class="p-mini" type="button"><i class="fas fa-exchange-alt"></i></button>
-              <button class="p-add" type="button"><i class="fa-solid fa-cart-shopping"></i> დამატება</button>
-            </div>
-          </article>
+      <section class="wrap banner-row">
+        <div class="big-banner banner10">
+          <img src="images/big-banner10.png" alt="" />
+        </div>
+      </section>
 
-          <article class="p-card">
-            <div class="p-img"><img src="items/65.png" alt=""></div>
-            <div class="p-badges">
-            </div>
-            <div class="p-price"><span class="bl">5799 ₾</span></div>
-            <div class="p-name">Roborock Robot Vacuum Saros Z70 Silver</div>
-            <div class="p-actions">
-              <button class="p-mini" type="button"><i class="fas fa-exchange-alt"></i></button>
-              <button class="p-add" type="button"><i class="fa-solid fa-cart-shopping"></i> დამატება</button>
-            </div>
-          </article>
+      <section class="wrap section">
+        <div class="section-head">
+          <h2 class="section-title">თამაშები</h2>
         </div>
 
-        <button class="car-btn right" type="button"><i class="fa-solid fa-angle-right"></i></button>
-      </div>
-    </section>
+        <div class="carousel">
+          <button class="car-btn left" type="button">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
 
-    <section class="wrap banner-row">
-      <div class="big-banner banner11">
-        <img src="images/big-banner11.png" alt="">
-      </div>
-    </section>
+          <div class="car-track">
+            <article class="p-card">
+              <div class="p-img"><img src="items/54.png" alt="" /></div>
+              <div class="p-badges">
+                <span class="badge">BEST PRICE</span>
+              </div>
+              <div class="p-price">159 ₾ <span class="smally">199 ₾</span></div>
+              <div class="p-name">EA Sports FC 26 Game For PS5</div>
+              <div class="p-actions">
+                <button class="p-mini" type="button">
+                  <i class="fas fa-exchange-alt"></i>
+                </button>
+                <button class="p-add" type="button">
+                  <i class="fa-solid fa-cart-shopping"></i> დამატება
+                </button>
+              </div>
+            </article>
 
+            <article class="p-card">
+              <div class="p-img"><img src="items/55.png" alt="" /></div>
+              <div class="p-badges">
+                <span class="badge">BEST PRICE</span>
+              </div>
+              <div class="black p-price"><span class="bl">149 ₾</span></div>
+              <div class="p-name">Mafia The Old Country Game For PS5</div>
+              <div class="p-actions">
+                <button class="p-mini" type="button">
+                  <i class="fas fa-exchange-alt"></i>
+                </button>
+                <button class="p-add" type="button">
+                  <i class="fa-solid fa-cart-shopping"></i> დამატება
+                </button>
+              </div>
+            </article>
 
-    <section class="wrap section">
-      <div class="section-head">
-        <h2 class="section-title">ჭკვიანი სახლი</h2>
-      </div>
+            <article class="p-card">
+              <div class="p-img"><img src="items/56.png" alt="" /></div>
+              <div class="p-badges">
+                <span class="badge">BEST PRICE</span>
+              </div>
+              <div class="p-price">109 ₾<span class="smally">139 ₾</span></div>
+              <div class="p-name">Monster Hunter Wilds Game for PS5</div>
+              <div class="p-actions">
+                <button class="p-mini" type="button">
+                  <i class="fas fa-exchange-alt"></i>
+                </button>
+                <button class="p-add" type="button">
+                  <i class="fa-solid fa-cart-shopping"></i> დამატება
+                </button>
+              </div>
+            </article>
 
-      <div class="carousel">
-        <button class="car-btn left" type="button"><i class="fa-solid fa-chevron-left"></i></button>
+            <article class="p-card">
+              <div class="p-img"><img src="items/57.png" alt="" /></div>
+              <div class="p-badges"></div>
+              <div class="p-price"><span class="bl">239 ₾</span></div>
+              <div class="p-name">Nintendo Switch 2 Game Legend of Zelda</div>
+              <div class="p-actions">
+                <button class="p-mini" type="button">
+                  <i class="fas fa-exchange-alt"></i>
+                </button>
+                <button class="p-add" type="button">
+                  <i class="fa-solid fa-cart-shopping"></i> დამატება
+                </button>
+              </div>
+            </article>
 
-        <div class="car-track">
-          <article class="p-card">
-            <div class="p-img"><img src="items/66.png" alt=""></div>
-            <div class="p-badges">
-            </div>
-            <div class="p-price"><span class="bl">29 ₾</span></div>
-            <div class="p-name">Xiaomi Temperature and Humidity Monitor 2 White</div>
-            <div class="p-actions">
-              <button class="p-mini" type="button"><i class="fas fa-exchange-alt"></i></button>
-              <button class="p-add" type="button"><i class="fa-solid fa-cart-shopping"></i> დამატება</button>
-            </div>
-          </article>
+            <article class="p-card">
+              <div class="p-img"><img src="items/58.png" alt="" /></div>
+              <div class="p-badges">
+                <span class="badge">NEW</span>
+              </div>
+              <div class="p-price"><span class="bl">249 ₾</span></div>
+              <div class="p-name">Ghost of Yotei Game For PS5</div>
+              <div class="p-actions">
+                <button class="p-mini" type="button">
+                  <i class="fas fa-exchange-alt"></i>
+                </button>
+                <button class="p-add" type="button">
+                  <i class="fa-solid fa-cart-shopping"></i> დამატება
+                </button>
+              </div>
+            </article>
 
-          <article class="p-card">
-            <div class="p-img"><img src="items/67.png" alt=""></div>
-            <div class="p-badges">
-            </div>
-            <div class="black p-price">139 ₾<span class="smally">99 ₾</span></div>
-            <div class="p-name">Xiaomi Imilab C21 Home Security Camera White</div>
-            <div class="p-actions">
-              <button class="p-mini" type="button"><i class="fas fa-exchange-alt"></i></button>
-              <button class="p-add" type="button"><i class="fa-solid fa-cart-shopping"></i> დამატება</button>
-            </div>
-          </article>
+            <article class="p-card">
+              <div class="p-img"><img src="items/59.png" alt="" /></div>
+              <div class="p-badges">
+                <span class="badge">BEST PRICE</span>
+              </div>
+              <div class="p-price"><span class="bl">169 ₾</span></div>
+              <div class="p-name">Nintendo Switch 2 Game NBA 2K26</div>
+              <div class="p-actions">
+                <button class="p-mini" type="button">
+                  <i class="fas fa-exchange-alt"></i>
+                </button>
+                <button class="p-add" type="button">
+                  <i class="fa-solid fa-cart-shopping"></i> დამატება
+                </button>
+              </div>
+            </article>
+          </div>
 
-          <article class="p-card">
-            <div class="p-img"><img src="items/68.png" alt=""></div>
-            <div class="p-badges">
-              <span class="badge">BEST PRICE</span>
-            </div>
-            <div class="p-price"><span class="bl">229 ₾</span></div>
-            <div class="p-name">Xiaomi Smart Air Fryer 5.5L White</div>
-            <div class="p-actions">
-              <button class="p-mini" type="button"><i class="fas fa-exchange-alt"></i></button>
-              <button class="p-add" type="button"><i class="fa-solid fa-cart-shopping"></i> დამატება</button>
-            </div>
-          </article>
+          <button class="car-btn right" type="button">
+            <i class="fa-solid fa-angle-right"></i>
+          </button>
+        </div>
+      </section>
 
-          <article class="p-card">
-            <div class="p-img"><img src="items/69.png" alt=""></div>
-            <div class="p-badges">
-              <span class="badge">BEST PRICE</span>
-            </div>
-            <div class="p-price"><span class="bl">39 ₾</span></div>
-            <div class="p-name">Xiaomi Smart Scale S200 White</div>
-            <div class="p-actions">
-              <button class="p-mini" type="button"><i class="fas fa-exchange-alt"></i></button>
-              <button class="p-add" type="button"><i class="fa-solid fa-cart-shopping"></i> დამატება</button>
-            </div>
-          </article>
-
-          <article class="p-card">
-            <div class="p-img"><img src="items/70.png" alt=""></div>
-            <div class="p-badges">
-            </div>
-            <div class="p-price"><span class="bl">49 ₾</span></div>
-            <div class="p-name">Xiaomi Smart Plug 2 White</div>
-            <div class="p-actions">
-              <button class="p-mini" type="button"><i class="fas fa-exchange-alt"></i></button>
-              <button class="p-add" type="button"><i class="fa-solid fa-cart-shopping"></i> დამატება</button>
-            </div>
-          </article>
-
-          <article class="p-card">
-            <div class="p-img"><img src="items/71.png" alt=""></div>
-            <div class="p-badges">
-              <span class="badge">GIFTS</span>
-            </div>
-            <div class="p-price">39 ₾<span class="smally">45 ₾</span></div>
-            <div class="p-name">Xiaomi Mi WiFi Range Extender Pro</div>
-            <div class="p-actions">
-              <button class="p-mini" type="button"><i class="fas fa-exchange-alt"></i></button>
-              <button class="p-add" type="button"><i class="fa-solid fa-cart-shopping"></i> დამატება</button>
-            </div>
-          </article>
+      <section class="wrap section">
+        <div class="section-head">
+          <h2 class="section-title">მტვერსასრუტები</h2>
         </div>
 
-        <button class="car-btn right" type="button"><i class="fa-solid fa-angle-right"></i></button>
-      </div>
-    </section>
+        <div class="carousel">
+          <button class="car-btn left" type="button">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
 
+          <div class="car-track">
+            <article class="p-card">
+              <div class="p-img"><img src="items/60.png" alt="" /></div>
+              <div class="p-badges"></div>
+              <div class="p-price"><span class="bl">849 ₾</span></div>
+              <div class="p-name">Roborock Robot Vacuum Q10 VF White</div>
+              <div class="p-actions">
+                <button class="p-mini" type="button">
+                  <i class="fas fa-exchange-alt"></i>
+                </button>
+                <button class="p-add" type="button">
+                  <i class="fa-solid fa-cart-shopping"></i> დამატება
+                </button>
+              </div>
+            </article>
 
-    <section class="wrap section">
-      <div class="section-head">
-        <h2 class="section-title">თავის მოვლა</h2>
-      </div>
+            <article class="p-card">
+              <div class="p-img"><img src="items/61.png" alt="" /></div>
+              <div class="p-badges"></div>
+              <div class="black p-price"><span class="bl">2699 ₾</span></div>
+              <div class="p-name">
+                Dyson Vacuum Cleaner Detect Submarine Iron
+              </div>
+              <div class="p-actions">
+                <button class="p-mini" type="button">
+                  <i class="fas fa-exchange-alt"></i>
+                </button>
+                <button class="p-add" type="button">
+                  <i class="fa-solid fa-cart-shopping"></i> დამატება
+                </button>
+              </div>
+            </article>
 
-      <div class="carousel">
-        <button class="car-btn left" type="button"><i class="fa-solid fa-chevron-left"></i></button>
+            <article class="p-card">
+              <div class="p-img"><img src="items/62.png" alt="" /></div>
+              <div class="p-badges"></div>
+              <div class="p-price"><span class="bl">2699 ₾</span></div>
+              <div class="p-name">Dreame Robot Vacuum L10s Pro Ultra White</div>
+              <div class="p-actions">
+                <button class="p-mini" type="button">
+                  <i class="fas fa-exchange-alt"></i>
+                </button>
+                <button class="p-add" type="button">
+                  <i class="fa-solid fa-cart-shopping"></i> დამატება
+                </button>
+              </div>
+            </article>
 
-        <div class="car-track">
-          <article class="p-card">
-            <div class="p-img"><img src="items/72.png" alt=""></div>
-            <div class="p-badges">
-            </div>
-            <div class="p-price"><span class="bl">2199 ₾</span></div>
-            <div class="p-name">Dyson Airwrap HS09 Multi Styler Ceramic Pink</div>
-            <div class="p-actions">
-              <button class="p-mini" type="button"><i class="fas fa-exchange-alt"></i></button>
-              <button class="p-add" type="button"><i class="fa-solid fa-cart-shopping"></i> დამატება</button>
-            </div>
-          </article>
+            <article class="p-card">
+              <div class="p-img"><img src="items/63.png" alt="" /></div>
+              <div class="p-badges">
+                <span class="badge">BEST PRICE</span>
+              </div>
+              <div class="p-price"><span class="bl">2099 ₾</span></div>
+              <div class="p-name">Xiaomi Robot Vacuum 5 Pro White</div>
+              <div class="p-actions">
+                <button class="p-mini" type="button">
+                  <i class="fas fa-exchange-alt"></i>
+                </button>
+                <button class="p-add" type="button">
+                  <i class="fa-solid fa-cart-shopping"></i> დამატება
+                </button>
+              </div>
+            </article>
 
-          <article class="p-card">
-            <div class="p-img"><img src="items/73.png" alt=""></div>
-            <div class="p-badges">
-            </div>
-            <div class="black p-price"><span class="bl">149 ₾</span></div>
-            <div class="p-name">Philips OneBlade QP1324/20 Silver</div>
-            <div class="p-actions">
-              <button class="p-mini" type="button"><i class="fas fa-exchange-alt"></i></button>
-              <button class="p-add" type="button"><i class="fa-solid fa-cart-shopping"></i> დამატება</button>
-            </div>
-          </article>
+            <article class="p-card">
+              <div class="p-img"><img src="items/64.png" alt="" /></div>
+              <div class="p-badges"></div>
+              <div class="p-price"><span class="bl">1999 ₾</span></div>
+              <div class="p-name">
+                Dyson Wash G1 Wet Floor Cleaner Black/Blue
+              </div>
+              <div class="p-actions">
+                <button class="p-mini" type="button">
+                  <i class="fas fa-exchange-alt"></i>
+                </button>
+                <button class="p-add" type="button">
+                  <i class="fa-solid fa-cart-shopping"></i> დამატება
+                </button>
+              </div>
+            </article>
 
-          <article class="p-card">
-            <div class="p-img"><img src="items/74.png" alt=""></div>
-            <div class="p-badges">
-            </div>
-            <div class="p-price"><span class="bl">179 ₾</span></div>
-            <div class="p-name">Xiaomi Cordless Hair Straightener Brush Grey</div>
-            <div class="p-actions">
-              <button class="p-mini" type="button"><i class="fas fa-exchange-alt"></i></button>
-              <button class="p-add" type="button"><i class="fa-solid fa-cart-shopping"></i> დამატება</button>
-            </div>
-          </article>
+            <article class="p-card">
+              <div class="p-img"><img src="items/65.png" alt="" /></div>
+              <div class="p-badges"></div>
+              <div class="p-price"><span class="bl">5799 ₾</span></div>
+              <div class="p-name">Roborock Robot Vacuum Saros Z70 Silver</div>
+              <div class="p-actions">
+                <button class="p-mini" type="button">
+                  <i class="fas fa-exchange-alt"></i>
+                </button>
+                <button class="p-add" type="button">
+                  <i class="fa-solid fa-cart-shopping"></i> დამატება
+                </button>
+              </div>
+            </article>
+          </div>
 
-          <article class="p-card">
-            <div class="p-img"><img src="items/75.png" alt=""></div>
-            <div class="p-badges">
-            </div>
-            <div class="p-price"><span class="bl">1499 ₾</span></div>
-            <div class="p-name">Dyson Airstrait Gift Box Nickel/Copper</div>
-            <div class="p-actions">
-              <button class="p-mini" type="button"><i class="fas fa-exchange-alt"></i></button>
-              <button class="p-add" type="button"><i class="fa-solid fa-cart-shopping"></i> დამატება</button>
-            </div>
-          </article>
+          <button class="car-btn right" type="button">
+            <i class="fa-solid fa-angle-right"></i>
+          </button>
+        </div>
+      </section>
 
-          <article class="p-card">
-            <div class="p-img"><img src="items/76.png" alt=""></div>
-            <div class="p-badges">
-              <span class="badge">BEST PRICE</span>
-            </div>
-            <div class="p-price">379 ₾<span class="smally">439 ₾</span></div>
-            <div class="p-name">Dreame Pocket High-Speed Hair Dryer Grey</div>
-            <div class="p-actions">
-              <button class="p-mini" type="button"><i class="fas fa-exchange-alt"></i></button>
-              <button class="p-add" type="button"><i class="fa-solid fa-cart-shopping"></i> დამატება</button>
-            </div>
-          </article>
+      <section class="wrap banner-row">
+        <div class="big-banner banner11">
+          <img src="images/big-banner11.png" alt="" />
+        </div>
+      </section>
 
-          <article class="p-card">
-            <div class="p-img"><img src="items/77.png" alt=""></div>
-            <div class="p-badges">
-            </div>
-            <div class="p-price"><span class="bl">1299 ₾</span></div>
-            <div class="p-name">Dyson Supersonic Hair Dryer Without Gift Box</div>
-            <div class="p-actions">
-              <button class="p-mini" type="button"><i class="fas fa-exchange-alt"></i></button>
-              <button class="p-add" type="button"><i class="fa-solid fa-cart-shopping"></i> დამატება</button>
-            </div>
-          </article>
+      <section class="wrap section">
+        <div class="section-head">
+          <h2 class="section-title">ჭკვიანი სახლი</h2>
         </div>
 
-        <button class="car-btn right" type="button"><i class="fa-solid fa-angle-right"></i></button>
-      </div>
-    </section>
+        <div class="carousel">
+          <button class="car-btn left" type="button">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
 
-    <section class="wrap banner-row">
-      <div class="big-banner banner12">
-        <div class="top-row">
-          <img src="images/big-banner12.1.png" alt="">
-          <img src="images/big-banner12.2.png" alt="">
-          <img src="images/big-banner12.3.png" alt="">
+          <div class="car-track">
+            <article class="p-card">
+              <div class="p-img"><img src="items/66.png" alt="" /></div>
+              <div class="p-badges"></div>
+              <div class="p-price"><span class="bl">29 ₾</span></div>
+              <div class="p-name">
+                Xiaomi Temperature and Humidity Monitor 2 White
+              </div>
+              <div class="p-actions">
+                <button class="p-mini" type="button">
+                  <i class="fas fa-exchange-alt"></i>
+                </button>
+                <button class="p-add" type="button">
+                  <i class="fa-solid fa-cart-shopping"></i> დამატება
+                </button>
+              </div>
+            </article>
+
+            <article class="p-card">
+              <div class="p-img"><img src="items/67.png" alt="" /></div>
+              <div class="p-badges"></div>
+              <div class="black p-price">
+                139 ₾<span class="smally">99 ₾</span>
+              </div>
+              <div class="p-name">
+                Xiaomi Imilab C21 Home Security Camera White
+              </div>
+              <div class="p-actions">
+                <button class="p-mini" type="button">
+                  <i class="fas fa-exchange-alt"></i>
+                </button>
+                <button class="p-add" type="button">
+                  <i class="fa-solid fa-cart-shopping"></i> დამატება
+                </button>
+              </div>
+            </article>
+
+            <article class="p-card">
+              <div class="p-img"><img src="items/68.png" alt="" /></div>
+              <div class="p-badges">
+                <span class="badge">BEST PRICE</span>
+              </div>
+              <div class="p-price"><span class="bl">229 ₾</span></div>
+              <div class="p-name">Xiaomi Smart Air Fryer 5.5L White</div>
+              <div class="p-actions">
+                <button class="p-mini" type="button">
+                  <i class="fas fa-exchange-alt"></i>
+                </button>
+                <button class="p-add" type="button">
+                  <i class="fa-solid fa-cart-shopping"></i> დამატება
+                </button>
+              </div>
+            </article>
+
+            <article class="p-card">
+              <div class="p-img"><img src="items/69.png" alt="" /></div>
+              <div class="p-badges">
+                <span class="badge">BEST PRICE</span>
+              </div>
+              <div class="p-price"><span class="bl">39 ₾</span></div>
+              <div class="p-name">Xiaomi Smart Scale S200 White</div>
+              <div class="p-actions">
+                <button class="p-mini" type="button">
+                  <i class="fas fa-exchange-alt"></i>
+                </button>
+                <button class="p-add" type="button">
+                  <i class="fa-solid fa-cart-shopping"></i> დამატება
+                </button>
+              </div>
+            </article>
+
+            <article class="p-card">
+              <div class="p-img"><img src="items/70.png" alt="" /></div>
+              <div class="p-badges"></div>
+              <div class="p-price"><span class="bl">49 ₾</span></div>
+              <div class="p-name">Xiaomi Smart Plug 2 White</div>
+              <div class="p-actions">
+                <button class="p-mini" type="button">
+                  <i class="fas fa-exchange-alt"></i>
+                </button>
+                <button class="p-add" type="button">
+                  <i class="fa-solid fa-cart-shopping"></i> დამატება
+                </button>
+              </div>
+            </article>
+
+            <article class="p-card">
+              <div class="p-img"><img src="items/71.png" alt="" /></div>
+              <div class="p-badges">
+                <span class="badge">GIFTS</span>
+              </div>
+              <div class="p-price">39 ₾<span class="smally">45 ₾</span></div>
+              <div class="p-name">Xiaomi Mi WiFi Range Extender Pro</div>
+              <div class="p-actions">
+                <button class="p-mini" type="button">
+                  <i class="fas fa-exchange-alt"></i>
+                </button>
+                <button class="p-add" type="button">
+                  <i class="fa-solid fa-cart-shopping"></i> დამატება
+                </button>
+              </div>
+            </article>
+          </div>
+
+          <button class="car-btn right" type="button">
+            <i class="fa-solid fa-angle-right"></i>
+          </button>
         </div>
-        <div class="bottom-row">
-          <img src="images/big-banner12.4.png" alt="">
-          <img src="images/big-banner12.5.png" alt="">
-          <img src="images/big-banner12.6.png" alt="">
-        </div>
-      </div>
-    </section>
+      </section>
 
-
-    <section class="wrap section">
-      <div class="section-head">
-        <h2 class="section-title">Gaming აქსესუარები</h2>
-      </div>
-
-      <div class="carousel">
-        <button class="car-btn left" type="button"><i class="fa-solid fa-chevron-left"></i></button>
-
-        <div class="car-track">
-          <article class="p-card">
-            <div class="p-img"><img src="items/78.png" alt=""></div>
-            <div class="p-badges">
-            </div>
-            <div class="p-price"><span class="bl">849 ₾</span></div>
-            <div class="p-name">Logitech G29 Driving Force Racing Wheel Black</div>
-            <div class="p-actions">
-              <button class="p-mini" type="button"><i class="fas fa-exchange-alt"></i></button>
-              <button class="p-add" type="button"><i class="fa-solid fa-cart-shopping"></i> დამატება</button>
-            </div>
-          </article>
-
-          <article class="p-card">
-            <div class="p-img"><img src="items/79.png" alt=""></div>
-            <div class="p-badges">
-            </div>
-            <div class="black p-price"><span class="bl">749 ₾</span></div>
-            <div class="p-name">Thrustmaster Shifter Add-On for PS4/PS5</div>
-            <div class="p-actions">
-              <button class="p-mini" type="button"><i class="fas fa-exchange-alt"></i></button>
-              <button class="p-add" type="button"><i class="fa-solid fa-cart-shopping"></i> დამატება</button>
-            </div>
-          </article>
-
-          <article class="p-card">
-            <div class="p-img"><img src="items/80.png" alt=""></div>
-            <div class="p-badges">
-            </div>
-            <div class="p-price">799 ₾<span class="smally">899 ₾</span></div>
-            <div class="p-name">Hyperx Gaming Chair Ruby Black/Red</div>
-            <div class="p-actions">
-              <button class="p-mini" type="button"><i class="fas fa-exchange-alt"></i></button>
-              <button class="p-add" type="button"><i class="fa-solid fa-cart-shopping"></i> დამატება</button>
-            </div>
-          </article>
-
-          <article class="p-card">
-            <div class="p-img"><img src="items/81.png" alt=""></div>
-            <div class="p-badges">
-              <span class="badge">BEST PRICE</span>
-            </div>
-            <div class="p-price">279 ₾<span class="smally">349 ₾</span></div>
-            <div class="p-name">Razer Gaming Keyboard BlackWidow V3 Black</div>
-            <div class="p-actions">
-              <button class="p-mini" type="button"><i class="fas fa-exchange-alt"></i></button>
-              <button class="p-add" type="button"><i class="fa-solid fa-cart-shopping"></i> დამატება</button>
-            </div>
-          </article>
-
-          <article class="p-card">
-            <div class="p-img"><img src="items/82.png" alt=""></div>
-            <div class="p-badges">
-              <span class="badge">BEST PRICE</span>
-            </div>
-            <div class="p-price">449 ₾<span class="smally">539 ₾</span></div>
-            <div class="p-name">Logitech Gaming Mouse G PRO SUPERLIGHT 2 Black</div>
-            <div class="p-actions">
-              <button class="p-mini" type="button"><i class="fas fa-exchange-alt"></i></button>
-              <button class="p-add" type="button"><i class="fa-solid fa-cart-shopping"></i> დამატება</button>
-            </div>
-          </article>
-
-          <article class="p-card">
-            <div class="p-img"><img src="items/83.png" alt=""></div>
-            <div class="p-badges">
-            </div>
-            <div class="p-price"><span class="bl">269 ₾</span></div>
-            <div class="p-name">Razer Webcam Kiyo Full HD Black</div>
-            <div class="p-actions">
-              <button class="p-mini" type="button"><i class="fas fa-exchange-alt"></i></button>
-              <button class="p-add" type="button"><i class="fa-solid fa-cart-shopping"></i> დამატება</button>
-            </div>
-          </article>
-        </div>
-
-        <button class="car-btn right" type="button"><i class="fa-solid fa-angle-right"></i></button>
-      </div>
-    </section>
-
-
-    <section class="wrap section">
-      <div class="section-head">
-        <h2 class="section-title">კონსოლები</h2>
-      </div>
-
-      <div class="carousel">
-        <button class="car-btn left" type="button"><i class="fa-solid fa-chevron-left"></i></button>
-
-        <div class="car-track">
-          <article class="p-card">
-            <div class="p-img"><img src="items/84.png" alt=""></div>
-            <div class="p-badges">
-            </div>
-            <div class="p-price"><span class="bl">2479 ₾</span></div>
-            <div class="p-name">Sony PlayStation PS5 Pro 2TB Digital Edition White</div>
-            <div class="p-actions">
-              <button class="p-mini" type="button"><i class="fas fa-exchange-alt"></i></button>
-              <button class="p-add" type="button"><i class="fa-solid fa-cart-shopping"></i> დამატება</button>
-            </div>
-          </article>
-
-          <article class="p-card">
-            <div class="p-img"><img src="items/85.png" alt=""></div>
-            <div class="p-badges">
-            </div>
-            <div class="black p-price"><span class="bl">2279 ₾</span></div>
-            <div class="p-name">Steam Deck Oled Console 1TB Black</div>
-            <div class="p-actions">
-              <button class="p-mini" type="button"><i class="fas fa-exchange-alt"></i></button>
-              <button class="p-add" type="button"><i class="fa-solid fa-cart-shopping"></i> დამატება</button>
-            </div>
-          </article>
-
-          <article class="p-card">
-            <div class="p-img"><img src="items/86.png" alt=""></div>
-            <div class="p-badges">
-            </div>
-            <div class="p-price"><span class="bl">1789 ₾</span></div>
-            <div class="p-name">Microsoft Xbox Series X Digital 1TB White</div>
-            <div class="p-actions">
-              <button class="p-mini" type="button"><i class="fas fa-exchange-alt"></i></button>
-              <button class="p-add" type="button"><i class="fa-solid fa-cart-shopping"></i> დამატება</button>
-            </div>
-          </article>
-
-          <article class="p-card">
-            <div class="p-img"><img src="items/87.png" alt=""></div>
-            <div class="p-badges">
-            </div>
-            <div class="p-price"><span class="bl">1879 ₾</span></div>
-            <div class="p-name">Meta Quest 3 512GB White</div>
-            <div class="p-actions">
-              <button class="p-mini" type="button"><i class="fas fa-exchange-alt"></i></button>
-              <button class="p-add" type="button"><i class="fa-solid fa-cart-shopping"></i> დამატება</button>
-            </div>
-          </article>
-
-          <article class="p-card">
-            <div class="p-img"><img src="items/88.png" alt=""></div>
-            <div class="p-badges">
-            </div>
-            <div class="p-price"><span class="bl">1729 ₾</span></div>
-            <div class="p-name">Sony PlayStation PS5 Slim 1TB White</div>
-            <div class="p-actions">
-              <button class="p-mini" type="button"><i class="fas fa-exchange-alt"></i></button>
-              <button class="p-add" type="button"><i class="fa-solid fa-cart-shopping"></i> დამატება</button>
-            </div>
-          </article>
-
-          <article class="p-card">
-            <div class="p-img"><img src="items/89.png" alt=""></div>
-            <div class="p-badges">
-            </div>
-            <div class="p-price"><span class="bl">1549 ₾</span></div>
-            <div class="p-name">Nintendo Switch 2 Black</div>
-            <div class="p-actions">
-              <button class="p-mini" type="button"><i class="fas fa-exchange-alt"></i></button>
-              <button class="p-add" type="button"><i class="fa-solid fa-cart-shopping"></i> დამატება</button>
-            </div>
-          </article>
+      <section class="wrap section">
+        <div class="section-head">
+          <h2 class="section-title">თავის მოვლა</h2>
         </div>
 
-        <button class="car-btn right" type="button"><i class="fa-solid fa-angle-right"></i></button>
-      </div>
-    </section>
+        <div class="carousel">
+          <button class="car-btn left" type="button">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
 
+          <div class="car-track">
+            <article class="p-card">
+              <div class="p-img"><img src="items/72.png" alt="" /></div>
+              <div class="p-badges"></div>
+              <div class="p-price"><span class="bl">2199 ₾</span></div>
+              <div class="p-name">
+                Dyson Airwrap HS09 Multi Styler Ceramic Pink
+              </div>
+              <div class="p-actions">
+                <button class="p-mini" type="button">
+                  <i class="fas fa-exchange-alt"></i>
+                </button>
+                <button class="p-add" type="button">
+                  <i class="fa-solid fa-cart-shopping"></i> დამატება
+                </button>
+              </div>
+            </article>
 
-    <section class="wrap section">
-      <div class="section-head">
-        <h2 class="section-title">Gaming ლეპტოპები</h2>
-      </div>
+            <article class="p-card">
+              <div class="p-img"><img src="items/73.png" alt="" /></div>
+              <div class="p-badges"></div>
+              <div class="black p-price"><span class="bl">149 ₾</span></div>
+              <div class="p-name">Philips OneBlade QP1324/20 Silver</div>
+              <div class="p-actions">
+                <button class="p-mini" type="button">
+                  <i class="fas fa-exchange-alt"></i>
+                </button>
+                <button class="p-add" type="button">
+                  <i class="fa-solid fa-cart-shopping"></i> დამატება
+                </button>
+              </div>
+            </article>
 
-      <div class="carousel">
-        <button class="car-btn left" type="button"><i class="fa-solid fa-chevron-left"></i></button>
+            <article class="p-card">
+              <div class="p-img"><img src="items/74.png" alt="" /></div>
+              <div class="p-badges"></div>
+              <div class="p-price"><span class="bl">179 ₾</span></div>
+              <div class="p-name">
+                Xiaomi Cordless Hair Straightener Brush Grey
+              </div>
+              <div class="p-actions">
+                <button class="p-mini" type="button">
+                  <i class="fas fa-exchange-alt"></i>
+                </button>
+                <button class="p-add" type="button">
+                  <i class="fa-solid fa-cart-shopping"></i> დამატება
+                </button>
+              </div>
+            </article>
 
-        <div class="car-track">
-          <article class="p-card">
-            <div class="p-img"><img src="items/90.png" alt=""></div>
-            <div class="p-badges">
-              <span class="badge">Best price</span>
-            </div>
-            <div class="p-price">2199 ₾ <span class="smally">2299 ₾</span></div>
-            <div class="p-name">MSI Thin 16GB RAM SSD 512GB, ლეპტოპი</div>
-            <div class="p-actions">
-              <button class="p-mini" type="button"><i class="fas fa-exchange-alt"></i></button>
-              <button class="p-add" type="button"><i class="fa-solid fa-cart-shopping"></i> დამატება</button>
-            </div>
-          </article>
+            <article class="p-card">
+              <div class="p-img"><img src="items/75.png" alt="" /></div>
+              <div class="p-badges"></div>
+              <div class="p-price"><span class="bl">1499 ₾</span></div>
+              <div class="p-name">Dyson Airstrait Gift Box Nickel/Copper</div>
+              <div class="p-actions">
+                <button class="p-mini" type="button">
+                  <i class="fas fa-exchange-alt"></i>
+                </button>
+                <button class="p-add" type="button">
+                  <i class="fa-solid fa-cart-shopping"></i> დამატება
+                </button>
+              </div>
+            </article>
 
-          <article class="p-card">
-            <div class="p-img"><img src="items/91.png" alt=""></div>
-            <div class="p-badges">
-            </div>
-            <div class="black p-price"><span class="bl">2499 ₾</span></div>
-            <div class="p-name">HP Victus 15 16GB RAM SSD 512GB</div>
-            <div class="p-actions">
-              <button class="p-mini" type="button"><i class="fas fa-exchange-alt"></i></button>
-              <button class="p-add" type="button"><i class="fa-solid fa-cart-shopping"></i> დამატება</button>
-            </div>
-          </article>
+            <article class="p-card">
+              <div class="p-img"><img src="items/76.png" alt="" /></div>
+              <div class="p-badges">
+                <span class="badge">BEST PRICE</span>
+              </div>
+              <div class="p-price">379 ₾<span class="smally">439 ₾</span></div>
+              <div class="p-name">Dreame Pocket High-Speed Hair Dryer Grey</div>
+              <div class="p-actions">
+                <button class="p-mini" type="button">
+                  <i class="fas fa-exchange-alt"></i>
+                </button>
+                <button class="p-add" type="button">
+                  <i class="fa-solid fa-cart-shopping"></i> დამატება
+                </button>
+              </div>
+            </article>
 
-          <article class="p-card">
-            <div class="p-img"><img src="items/92.png" alt=""></div>
-            <div class="p-badges">
-            </div>
-            <div class="p-price"><span class="bl">3699 ₾</span></div>
-            <div class="p-name">Asus TUF A16 16GB RAM SSD 512GB</div>
-            <div class="p-actions">
-              <button class="p-mini" type="button"><i class="fas fa-exchange-alt"></i></button>
-              <button class="p-add" type="button"><i class="fa-solid fa-cart-shopping"></i> დამატება</button>
-            </div>
-          </article>
+            <article class="p-card">
+              <div class="p-img"><img src="items/77.png" alt="" /></div>
+              <div class="p-badges"></div>
+              <div class="p-price"><span class="bl">1299 ₾</span></div>
+              <div class="p-name">
+                Dyson Supersonic Hair Dryer Without Gift Box
+              </div>
+              <div class="p-actions">
+                <button class="p-mini" type="button">
+                  <i class="fas fa-exchange-alt"></i>
+                </button>
+                <button class="p-add" type="button">
+                  <i class="fa-solid fa-cart-shopping"></i> დამატება
+                </button>
+              </div>
+            </article>
+          </div>
 
-          <article class="p-card">
-            <div class="p-img"><img src="items/93.png" alt=""></div>
-            <div class="p-badges">
-            </div>
-            <div class="p-price"><span class="bl">4199 ₾</span></div>
-            <div class="p-name">Lenovo Legion 5 16GB RAM SSD 512GB</div>
-            <div class="p-actions">
-              <button class="p-mini" type="button"><i class="fas fa-exchange-alt"></i></button>
-              <button class="p-add" type="button"><i class="fa-solid fa-cart-shopping"></i> დამატება</button>
-            </div>
-          </article>
+          <button class="car-btn right" type="button">
+            <i class="fa-solid fa-angle-right"></i>
+          </button>
+        </div>
+      </section>
 
-          <article class="p-card">
-            <div class="p-img"><img src="items/94.png" alt=""></div>
-            <div class="p-badges">
-            </div>
-            <div class="p-price">6999 ₾<span class="smally">7379 ₾</span></div>
-            <div class="p-name">Asus ROG Strix 16 16GB RAM SSD 1TB</div>
-            <div class="p-actions">
-              <button class="p-mini" type="button"><i class="fas fa-exchange-alt"></i></button>
-              <button class="p-add" type="button"><i class="fa-solid fa-cart-shopping"></i> დამატება</button>
-            </div>
-          </article>
+      <section class="wrap banner-row">
+        <div class="big-banner banner12">
+          <div class="top-row">
+            <img src="images/big-banner12.1.png" alt="" />
+            <img src="images/big-banner12.2.png" alt="" />
+            <img src="images/big-banner12.3.png" alt="" />
+          </div>
+          <div class="bottom-row">
+            <img src="images/big-banner12.4.png" alt="" />
+            <img src="images/big-banner12.5.png" alt="" />
+            <img src="images/big-banner12.6.png" alt="" />
+          </div>
+        </div>
+      </section>
 
-          <article class="p-card">
-            <div class="p-img"><img src="items/95.png" alt=""></div>
-            <div class="p-badges">
-            </div>
-            <div class="p-price"><span class="bl">16999 ₾</span></div>
-            <div class="p-name">Lenovo Legion 9 64GB RAM SSD 4TB</div>
-            <div class="p-actions">
-              <button class="p-mini" type="button"><i class="fas fa-exchange-alt"></i></button>
-              <button class="p-add" type="button"><i class="fa-solid fa-cart-shopping"></i> დამატება</button>
-            </div>
-          </article>
+      <section class="wrap section">
+        <div class="section-head">
+          <h2 class="section-title">Gaming აქსესუარები</h2>
         </div>
 
-        <button class="car-btn right" type="button"><i class="fa-solid fa-angle-right"></i></button>
-      </div>
-    </section>
+        <div class="carousel">
+          <button class="car-btn left" type="button">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
 
+          <div class="car-track">
+            <article class="p-card">
+              <div class="p-img"><img src="items/78.png" alt="" /></div>
+              <div class="p-badges"></div>
+              <div class="p-price"><span class="bl">849 ₾</span></div>
+              <div class="p-name">
+                Logitech G29 Driving Force Racing Wheel Black
+              </div>
+              <div class="p-actions">
+                <button class="p-mini" type="button">
+                  <i class="fas fa-exchange-alt"></i>
+                </button>
+                <button class="p-add" type="button">
+                  <i class="fa-solid fa-cart-shopping"></i> დამატება
+                </button>
+              </div>
+            </article>
 
-    <section class="wrap section">
-      <div class="section-head">
-        <h2 class="section-title">მანქანის აქსესუარები</h2>
-      </div>
+            <article class="p-card">
+              <div class="p-img"><img src="items/79.png" alt="" /></div>
+              <div class="p-badges"></div>
+              <div class="black p-price"><span class="bl">749 ₾</span></div>
+              <div class="p-name">Thrustmaster Shifter Add-On for PS4/PS5</div>
+              <div class="p-actions">
+                <button class="p-mini" type="button">
+                  <i class="fas fa-exchange-alt"></i>
+                </button>
+                <button class="p-add" type="button">
+                  <i class="fa-solid fa-cart-shopping"></i> დამატება
+                </button>
+              </div>
+            </article>
 
-      <div class="carousel">
-        <button class="car-btn left" type="button"><i class="fa-solid fa-chevron-left"></i></button>
+            <article class="p-card">
+              <div class="p-img"><img src="items/80.png" alt="" /></div>
+              <div class="p-badges"></div>
+              <div class="p-price">799 ₾<span class="smally">899 ₾</span></div>
+              <div class="p-name">Hyperx Gaming Chair Ruby Black/Red</div>
+              <div class="p-actions">
+                <button class="p-mini" type="button">
+                  <i class="fas fa-exchange-alt"></i>
+                </button>
+                <button class="p-add" type="button">
+                  <i class="fa-solid fa-cart-shopping"></i> დამატება
+                </button>
+              </div>
+            </article>
 
-        <div class="car-track">
-          <article class="p-card">
-            <div class="p-img"><img src="items/96.png" alt=""></div>
-            <div class="p-badges">
-            </div>
-            <div class="p-price"><span class="bl">499 ₾</span></div>
-            <div class="p-name">Xiaomi Dash Cam S500 Plus Rear Cam Set Black</div>
-            <div class="p-actions">
-              <button class="p-mini" type="button"><i class="fas fa-exchange-alt"></i></button>
-              <button class="p-add" type="button"><i class="fa-solid fa-cart-shopping"></i> დამატება</button>
-            </div>
-          </article>
+            <article class="p-card">
+              <div class="p-img"><img src="items/81.png" alt="" /></div>
+              <div class="p-badges">
+                <span class="badge">BEST PRICE</span>
+              </div>
+              <div class="p-price">279 ₾<span class="smally">349 ₾</span></div>
+              <div class="p-name">
+                Razer Gaming Keyboard BlackWidow V3 Black
+              </div>
+              <div class="p-actions">
+                <button class="p-mini" type="button">
+                  <i class="fas fa-exchange-alt"></i>
+                </button>
+                <button class="p-add" type="button">
+                  <i class="fa-solid fa-cart-shopping"></i> დამატება
+                </button>
+              </div>
+            </article>
 
-          <article class="p-card">
-            <div class="p-img"><img src="items/97.png" alt=""></div>
-            <div class="p-badges">
-            </div>
-            <div class="black p-price"><span class="bl">39 ₾</span></div>
-            <div class="p-name">Baseus Square Bar Temporary Parking</div>
-            <div class="p-actions">
-              <button class="p-mini" type="button"><i class="fas fa-exchange-alt"></i></button>
-              <button class="p-add" type="button"><i class="fa-solid fa-cart-shopping"></i> დამატება</button>
-            </div>
-          </article>
+            <article class="p-card">
+              <div class="p-img"><img src="items/82.png" alt="" /></div>
+              <div class="p-badges">
+                <span class="badge">BEST PRICE</span>
+              </div>
+              <div class="p-price">449 ₾<span class="smally">539 ₾</span></div>
+              <div class="p-name">
+                Logitech Gaming Mouse G PRO SUPERLIGHT 2 Black
+              </div>
+              <div class="p-actions">
+                <button class="p-mini" type="button">
+                  <i class="fas fa-exchange-alt"></i>
+                </button>
+                <button class="p-add" type="button">
+                  <i class="fa-solid fa-cart-shopping"></i> დამატება
+                </button>
+              </div>
+            </article>
 
-          <article class="p-card">
-            <div class="p-img"><img src="items/98.png" alt=""></div>
-            <div class="p-badges">
-            </div>
-            <div class="p-price"><span class="bl">229 ₾</span></div>
-            <div class="p-name">Xiaomi 50W Wireless Car Charger Black</div>
-            <div class="p-actions">
-              <button class="p-mini" type="button"><i class="fas fa-exchange-alt"></i></button>
-              <button class="p-add" type="button"><i class="fa-solid fa-cart-shopping"></i> დამატება</button>
-            </div>
-          </article>
+            <article class="p-card">
+              <div class="p-img"><img src="items/83.png" alt="" /></div>
+              <div class="p-badges"></div>
+              <div class="p-price"><span class="bl">269 ₾</span></div>
+              <div class="p-name">Razer Webcam Kiyo Full HD Black</div>
+              <div class="p-actions">
+                <button class="p-mini" type="button">
+                  <i class="fas fa-exchange-alt"></i>
+                </button>
+                <button class="p-add" type="button">
+                  <i class="fa-solid fa-cart-shopping"></i> დამატება
+                </button>
+              </div>
+            </article>
+          </div>
 
-          <article class="p-card">
-            <div class="p-img"><img src="items/99.png" alt=""></div>
-            <div class="p-badges">
-            </div>
-            <div class="p-price"><span class="bl">29 ₾</span></div>
-            <div class="p-name">Baseus Graceful Car Fragrance Lite</div>
-            <div class="p-actions">
-              <button class="p-mini" type="button"><i class="fas fa-exchange-alt"></i></button>
-              <button class="p-add" type="button"><i class="fa-solid fa-cart-shopping"></i> დამატება</button>
-            </div>
-          </article>
+          <button class="car-btn right" type="button">
+            <i class="fa-solid fa-angle-right"></i>
+          </button>
+        </div>
+      </section>
 
-          <article class="p-card">
-            <div class="p-img"><img src="items/100.png" alt=""></div>
-            <div class="p-badges">
-            </div>
-            <div class="p-price">59 ₾<span class="smally">99 ₾</span></div>
-            <div class="p-name">Ugreen Bluetooth Car Charger Black</div>
-            <div class="p-actions">
-              <button class="p-mini" type="button"><i class="fas fa-exchange-alt"></i></button>
-              <button class="p-add" type="button"><i class="fa-solid fa-cart-shopping"></i> დამატება</button>
-            </div>
-          </article>
-
-          <article class="p-card">
-            <div class="p-img"><img src="items/101.png" alt=""></div>
-            <div class="p-badges">
-            </div>
-            <div class="p-price"><span class="bl">59 ₾</span></div>
-            <div class="p-name">Xiaomi 70mai External GPS Module For Midrive</div>
-            <div class="p-actions">
-              <button class="p-mini" type="button"><i class="fas fa-exchange-alt"></i></button>
-              <button class="p-add" type="button"><i class="fa-solid fa-cart-shopping"></i> დამატება</button>
-            </div>
-          </article>
+      <section class="wrap section">
+        <div class="section-head">
+          <h2 class="section-title">კონსოლები</h2>
         </div>
 
-        <button class="car-btn right" type="button"><i class="fa-solid fa-angle-right"></i></button>
-      </div>
-    </section>
+        <div class="carousel">
+          <button class="car-btn left" type="button">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
 
+          <div class="car-track">
+            <article class="p-card">
+              <div class="p-img"><img src="items/84.png" alt="" /></div>
+              <div class="p-badges"></div>
+              <div class="p-price"><span class="bl">2479 ₾</span></div>
+              <div class="p-name">
+                Sony PlayStation PS5 Pro 2TB Digital Edition White
+              </div>
+              <div class="p-actions">
+                <button class="p-mini" type="button">
+                  <i class="fas fa-exchange-alt"></i>
+                </button>
+                <button class="p-add" type="button">
+                  <i class="fa-solid fa-cart-shopping"></i> დამატება
+                </button>
+              </div>
+            </article>
 
-    <section class="wrap section">
-      <div class="section-head">
-        <h2 class="section-title">სკუტერები</h2>
-      </div>
+            <article class="p-card">
+              <div class="p-img"><img src="items/85.png" alt="" /></div>
+              <div class="p-badges"></div>
+              <div class="black p-price"><span class="bl">2279 ₾</span></div>
+              <div class="p-name">Steam Deck Oled Console 1TB Black</div>
+              <div class="p-actions">
+                <button class="p-mini" type="button">
+                  <i class="fas fa-exchange-alt"></i>
+                </button>
+                <button class="p-add" type="button">
+                  <i class="fa-solid fa-cart-shopping"></i> დამატება
+                </button>
+              </div>
+            </article>
 
-      <div class="carousel">
-        <button class="car-btn left" type="button"><i class="fa-solid fa-chevron-left"></i></button>
+            <article class="p-card">
+              <div class="p-img"><img src="items/86.png" alt="" /></div>
+              <div class="p-badges"></div>
+              <div class="p-price"><span class="bl">1789 ₾</span></div>
+              <div class="p-name">
+                Microsoft Xbox Series X Digital 1TB White
+              </div>
+              <div class="p-actions">
+                <button class="p-mini" type="button">
+                  <i class="fas fa-exchange-alt"></i>
+                </button>
+                <button class="p-add" type="button">
+                  <i class="fa-solid fa-cart-shopping"></i> დამატება
+                </button>
+              </div>
+            </article>
 
-        <div class="car-track">
-          <article class="p-card">
-            <div class="p-img"><img src="items/102.png" alt=""></div>
-            <div class="p-badges">
-            </div>
-            <div class="p-price"><span class="bl">1199 ₾</span></div>
-            <div class="p-name">Xiaomi Electric Scooter Elite Black</div>
-            <div class="p-actions">
-              <button class="p-mini" type="button"><i class="fas fa-exchange-alt"></i></button>
-              <button class="p-add" type="button"><i class="fa-solid fa-cart-shopping"></i> დამატება</button>
-            </div>
-          </article>
+            <article class="p-card">
+              <div class="p-img"><img src="items/87.png" alt="" /></div>
+              <div class="p-badges"></div>
+              <div class="p-price"><span class="bl">1879 ₾</span></div>
+              <div class="p-name">Meta Quest 3 512GB White</div>
+              <div class="p-actions">
+                <button class="p-mini" type="button">
+                  <i class="fas fa-exchange-alt"></i>
+                </button>
+                <button class="p-add" type="button">
+                  <i class="fa-solid fa-cart-shopping"></i> დამატება
+                </button>
+              </div>
+            </article>
 
-          <article class="p-card">
-            <div class="p-img"><img src="items/103.png" alt=""></div>
-            <div class="p-badges">
-              <span class="badge">BEST PRICE</span>
+            <article class="p-card">
+              <div class="p-img"><img src="items/88.png" alt="" /></div>
+              <div class="p-badges"></div>
+              <div class="p-price"><span class="bl">1729 ₾</span></div>
+              <div class="p-name">Sony PlayStation PS5 Slim 1TB White</div>
+              <div class="p-actions">
+                <button class="p-mini" type="button">
+                  <i class="fas fa-exchange-alt"></i>
+                </button>
+                <button class="p-add" type="button">
+                  <i class="fa-solid fa-cart-shopping"></i> დამატება
+                </button>
+              </div>
+            </article>
 
-            </div>
-            <div class="black p-price">1299 ₾<span class="smally">1499 ₾</span></div>
-            <div class="p-name">Xiaomi Electric Scooter 5 Black</div>
-            <div class="p-actions">
-              <button class="p-mini" type="button"><i class="fas fa-exchange-alt"></i></button>
-              <button class="p-add" type="button"><i class="fa-solid fa-cart-shopping"></i> დამატება</button>
-            </div>
-          </article>
+            <article class="p-card">
+              <div class="p-img"><img src="items/89.png" alt="" /></div>
+              <div class="p-badges"></div>
+              <div class="p-price"><span class="bl">1549 ₾</span></div>
+              <div class="p-name">Nintendo Switch 2 Black</div>
+              <div class="p-actions">
+                <button class="p-mini" type="button">
+                  <i class="fas fa-exchange-alt"></i>
+                </button>
+                <button class="p-add" type="button">
+                  <i class="fa-solid fa-cart-shopping"></i> დამატება
+                </button>
+              </div>
+            </article>
+          </div>
 
-          <article class="p-card">
-            <div class="p-img"><img src="items/104.png" alt=""></div>
-            <div class="p-badges">
-            </div>
-            <div class="p-price"><span class="bl">1479 ₾</span></div>
-            <div class="p-name">Segway Ninebot Kickscooter F2 II Black</div>
-            <div class="p-actions">
-              <button class="p-mini" type="button"><i class="fas fa-exchange-alt"></i></button>
-              <button class="p-add" type="button"><i class="fa-solid fa-cart-shopping"></i> დამატება</button>
-            </div>
-          </article>
+          <button class="car-btn right" type="button">
+            <i class="fa-solid fa-angle-right"></i>
+          </button>
+        </div>
+      </section>
 
-          <article class="p-card">
-            <div class="p-img"><img src="items/105.png" alt=""></div>
-            <div class="p-badges">
-            </div>
-            <div class="p-price"><span class="bl">1699 ₾</span></div>
-            <div class="p-name">Xiaomi Electric Scooter 5 Pro Black</div>
-            <div class="p-actions">
-              <button class="p-mini" type="button"><i class="fas fa-exchange-alt"></i></button>
-              <button class="p-add" type="button"><i class="fa-solid fa-cart-shopping"></i> დამატება</button>
-            </div>
-          </article>
-
-          <article class="p-card">
-            <div class="p-img"><img src="items/106.png" alt=""></div>
-            <div class="p-badges">
-            </div>
-            <div class="p-price"><span class="bl">1799 ₾</span></div>
-            <div class="p-name">Xiaomi Electric Scooter 5 Max Black</div>
-            <div class="p-actions">
-              <button class="p-mini" type="button"><i class="fas fa-exchange-alt"></i></button>
-              <button class="p-add" type="button"><i class="fa-solid fa-cart-shopping"></i> დამატება</button>
-            </div>
-          </article>
-
-          <article class="p-card">
-            <div class="p-img"><img src="items/107.png" alt=""></div>
-            <div class="p-badges">
-            </div>
-            <div class="p-price"><span class="bl">1879 ₾</span></div>
-            <div class="p-name">Segway Ninebot Kickscooter F2 Pro II Black</div>
-            <div class="p-actions">
-              <button class="p-mini" type="button"><i class="fas fa-exchange-alt"></i></button>
-              <button class="p-add" type="button"><i class="fa-solid fa-cart-shopping"></i> დამატება</button>
-            </div>
-          </article>
+      <section class="wrap section">
+        <div class="section-head">
+          <h2 class="section-title">Gaming ლეპტოპები</h2>
         </div>
 
-        <button class="car-btn right" type="button"><i class="fa-solid fa-angle-right"></i></button>
-      </div>
-    </section>
+        <div class="carousel">
+          <button class="car-btn left" type="button">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
 
+          <div class="car-track">
+            <article class="p-card">
+              <div class="p-img"><img src="items/90.png" alt="" /></div>
+              <div class="p-badges">
+                <span class="badge">Best price</span>
+              </div>
+              <div class="p-price">
+                2199 ₾ <span class="smally">2299 ₾</span>
+              </div>
+              <div class="p-name">MSI Thin 16GB RAM SSD 512GB, ლეპტოპი</div>
+              <div class="p-actions">
+                <button class="p-mini" type="button">
+                  <i class="fas fa-exchange-alt"></i>
+                </button>
+                <button class="p-add" type="button">
+                  <i class="fa-solid fa-cart-shopping"></i> დამატება
+                </button>
+              </div>
+            </article>
 
-    
-    <section class="wrap section">
-      <div class="section-head">
-        <h2 class="section-title">TOP პროდუქტი</h2>
-      </div>
+            <article class="p-card">
+              <div class="p-img"><img src="items/91.png" alt="" /></div>
+              <div class="p-badges"></div>
+              <div class="black p-price"><span class="bl">2499 ₾</span></div>
+              <div class="p-name">HP Victus 15 16GB RAM SSD 512GB</div>
+              <div class="p-actions">
+                <button class="p-mini" type="button">
+                  <i class="fas fa-exchange-alt"></i>
+                </button>
+                <button class="p-add" type="button">
+                  <i class="fa-solid fa-cart-shopping"></i> დამატება
+                </button>
+              </div>
+            </article>
 
-      <div class="carousel">
-        <button class="car-btn left" type="button"><i class="fa-solid fa-chevron-left"></i></button>
+            <article class="p-card">
+              <div class="p-img"><img src="items/92.png" alt="" /></div>
+              <div class="p-badges"></div>
+              <div class="p-price"><span class="bl">3699 ₾</span></div>
+              <div class="p-name">Asus TUF A16 16GB RAM SSD 512GB</div>
+              <div class="p-actions">
+                <button class="p-mini" type="button">
+                  <i class="fas fa-exchange-alt"></i>
+                </button>
+                <button class="p-add" type="button">
+                  <i class="fa-solid fa-cart-shopping"></i> დამატება
+                </button>
+              </div>
+            </article>
 
-        <div class="car-track">
-          <article class="p-card">
-            <div class="p-img"><img src="items/108.png" alt=""></div>
-            <div class="p-badges">
-            </div>
-            <div class="p-price"><span class="bl">1729 ₾</span></div>
-            <div class="p-name">Sony PlayStation PS5 Slim 1TB White</div>
-            <div class="p-actions">
-              <button class="p-mini" type="button"><i class="fas fa-exchange-alt"></i></button>
-              <button class="p-add" type="button"><i class="fa-solid fa-cart-shopping"></i> დამატება</button>
-            </div>
-          </article>
+            <article class="p-card">
+              <div class="p-img"><img src="items/93.png" alt="" /></div>
+              <div class="p-badges"></div>
+              <div class="p-price"><span class="bl">4199 ₾</span></div>
+              <div class="p-name">Lenovo Legion 5 16GB RAM SSD 512GB</div>
+              <div class="p-actions">
+                <button class="p-mini" type="button">
+                  <i class="fas fa-exchange-alt"></i>
+                </button>
+                <button class="p-add" type="button">
+                  <i class="fa-solid fa-cart-shopping"></i> დამატება
+                </button>
+              </div>
+            </article>
 
-          <article class="p-card">
-            <div class="p-img"><img src="items/109.png" alt=""></div>
-            <div class="p-badges">
-              <span class="badge">BEST PRICE</span>
-            </div>
-            <div class="black p-price">3999 ₾<span class="smally">4399 ₾</span></div>
-            <div class="p-name">Apple iPhone 17 Pro Max e-SIM | 256GB Orange</div>
-            <div class="p-actions">
-              <button class="p-mini" type="button"><i class="fas fa-exchange-alt"></i></button>
-              <button class="p-add" type="button"><i class="fa-solid fa-cart-shopping"></i> დამატება</button>
-            </div>
-          </article>
+            <article class="p-card">
+              <div class="p-img"><img src="items/94.png" alt="" /></div>
+              <div class="p-badges"></div>
+              <div class="p-price">
+                6999 ₾<span class="smally">7379 ₾</span>
+              </div>
+              <div class="p-name">Asus ROG Strix 16 16GB RAM SSD 1TB</div>
+              <div class="p-actions">
+                <button class="p-mini" type="button">
+                  <i class="fas fa-exchange-alt"></i>
+                </button>
+                <button class="p-add" type="button">
+                  <i class="fa-solid fa-cart-shopping"></i> დამატება
+                </button>
+              </div>
+            </article>
 
-          <article class="p-card">
-            <div class="p-img"><img src="items/110.png" alt=""></div>
-            <div class="p-badges">
-              <span class="badge">BEST PRICE</span>
-            </div>
-            <div class="p-price">159 ₾<span class="smally">199 ₾</span></div>
-            <div class="p-name">EA Sports FC 26 Game For PS5</div>
-            <div class="p-actions">
-              <button class="p-mini" type="button"><i class="fas fa-exchange-alt"></i></button>
-              <button class="p-add" type="button"><i class="fa-solid fa-cart-shopping"></i> დამატება</button>
-            </div>
-          </article>
+            <article class="p-card">
+              <div class="p-img"><img src="items/95.png" alt="" /></div>
+              <div class="p-badges"></div>
+              <div class="p-price"><span class="bl">16999 ₾</span></div>
+              <div class="p-name">Lenovo Legion 9 64GB RAM SSD 4TB</div>
+              <div class="p-actions">
+                <button class="p-mini" type="button">
+                  <i class="fas fa-exchange-alt"></i>
+                </button>
+                <button class="p-add" type="button">
+                  <i class="fa-solid fa-cart-shopping"></i> დამატება
+                </button>
+              </div>
+            </article>
+          </div>
 
-          <article class="p-card">
-            <div class="p-img"><img src="items/111.png" alt=""></div>
-            <div class="p-badges">
-              <span class="badge">BEST PRICE</span>
-            </div>
-            <div class="p-price">2799 ₾<span class="smally">2999 ₾</span></div>
-            <div class="p-name">Samsung Galaxy S25 Ultra 5G 12/256GB Titanium</div>
-            <div class="p-actions">
-              <button class="p-mini" type="button"><i class="fas fa-exchange-alt"></i></button>
-              <button class="p-add" type="button"><i class="fa-solid fa-cart-shopping"></i> დამატება</button>
-            </div>
-          </article>
+          <button class="car-btn right" type="button">
+            <i class="fa-solid fa-angle-right"></i>
+          </button>
+        </div>
+      </section>
 
-          <article class="p-card">
-            <div class="p-img"><img src="items/112.png" alt=""></div>
-            <div class="p-badges">
-              <span class="badge">BEST PRICE</span>
-            </div>
-            <div class="p-price"><span class="bl">849 ₾</span></div>
-            <div class="p-name">Apple AirPods Pro 3 MFHP4 White</div>
-            <div class="p-actions">
-              <button class="p-mini" type="button"><i class="fas fa-exchange-alt"></i></button>
-              <button class="p-add" type="button"><i class="fa-solid fa-cart-shopping"></i> დამატება</button>
-            </div>
-          </article>
-
-          <article class="p-card">
-            <div class="p-img"><img src="items/113.png" alt=""></div>
-            <div class="p-badges">
-              <span class="badge">GIFTS</span>
-            </div>
-            <div class="p-price"><span class="bl">299 ₾</span></div>
-            <div class="p-name">Fujifilm Instax Mini 12 Instant Camera Pink</div>
-            <div class="p-actions">
-              <button class="p-mini" type="button"><i class="fas fa-exchange-alt"></i></button>
-              <button class="p-add" type="button"><i class="fa-solid fa-cart-shopping"></i> დამატება</button>
-            </div>
-          </article>
+      <section class="wrap section">
+        <div class="section-head">
+          <h2 class="section-title">მანქანის აქსესუარები</h2>
         </div>
 
-        <button class="car-btn right" type="button"><i class="fa-solid fa-angle-right"></i></button>
-      </div>
-    </section>
+        <div class="carousel">
+          <button class="car-btn left" type="button">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
 
-    <footer class="main-footer">
-    <div class="footer-container">
-        <div class="footer-column">
+          <div class="car-track">
+            <article class="p-card">
+              <div class="p-img"><img src="items/96.png" alt="" /></div>
+              <div class="p-badges"></div>
+              <div class="p-price"><span class="bl">499 ₾</span></div>
+              <div class="p-name">
+                Xiaomi Dash Cam S500 Plus Rear Cam Set Black
+              </div>
+              <div class="p-actions">
+                <button class="p-mini" type="button">
+                  <i class="fas fa-exchange-alt"></i>
+                </button>
+                <button class="p-add" type="button">
+                  <i class="fa-solid fa-cart-shopping"></i> დამატება
+                </button>
+              </div>
+            </article>
+
+            <article class="p-card">
+              <div class="p-img"><img src="items/97.png" alt="" /></div>
+              <div class="p-badges"></div>
+              <div class="black p-price"><span class="bl">39 ₾</span></div>
+              <div class="p-name">Baseus Square Bar Temporary Parking</div>
+              <div class="p-actions">
+                <button class="p-mini" type="button">
+                  <i class="fas fa-exchange-alt"></i>
+                </button>
+                <button class="p-add" type="button">
+                  <i class="fa-solid fa-cart-shopping"></i> დამატება
+                </button>
+              </div>
+            </article>
+
+            <article class="p-card">
+              <div class="p-img"><img src="items/98.png" alt="" /></div>
+              <div class="p-badges"></div>
+              <div class="p-price"><span class="bl">229 ₾</span></div>
+              <div class="p-name">Xiaomi 50W Wireless Car Charger Black</div>
+              <div class="p-actions">
+                <button class="p-mini" type="button">
+                  <i class="fas fa-exchange-alt"></i>
+                </button>
+                <button class="p-add" type="button">
+                  <i class="fa-solid fa-cart-shopping"></i> დამატება
+                </button>
+              </div>
+            </article>
+
+            <article class="p-card">
+              <div class="p-img"><img src="items/99.png" alt="" /></div>
+              <div class="p-badges"></div>
+              <div class="p-price"><span class="bl">29 ₾</span></div>
+              <div class="p-name">Baseus Graceful Car Fragrance Lite</div>
+              <div class="p-actions">
+                <button class="p-mini" type="button">
+                  <i class="fas fa-exchange-alt"></i>
+                </button>
+                <button class="p-add" type="button">
+                  <i class="fa-solid fa-cart-shopping"></i> დამატება
+                </button>
+              </div>
+            </article>
+
+            <article class="p-card">
+              <div class="p-img"><img src="items/100.png" alt="" /></div>
+              <div class="p-badges"></div>
+              <div class="p-price">59 ₾<span class="smally">99 ₾</span></div>
+              <div class="p-name">Ugreen Bluetooth Car Charger Black</div>
+              <div class="p-actions">
+                <button class="p-mini" type="button">
+                  <i class="fas fa-exchange-alt"></i>
+                </button>
+                <button class="p-add" type="button">
+                  <i class="fa-solid fa-cart-shopping"></i> დამატება
+                </button>
+              </div>
+            </article>
+
+            <article class="p-card">
+              <div class="p-img"><img src="items/101.png" alt="" /></div>
+              <div class="p-badges"></div>
+              <div class="p-price"><span class="bl">59 ₾</span></div>
+              <div class="p-name">
+                Xiaomi 70mai External GPS Module For Midrive
+              </div>
+              <div class="p-actions">
+                <button class="p-mini" type="button">
+                  <i class="fas fa-exchange-alt"></i>
+                </button>
+                <button class="p-add" type="button">
+                  <i class="fa-solid fa-cart-shopping"></i> დამატება
+                </button>
+              </div>
+            </article>
+          </div>
+
+          <button class="car-btn right" type="button">
+            <i class="fa-solid fa-angle-right"></i>
+          </button>
+        </div>
+      </section>
+
+      <section class="wrap section">
+        <div class="section-head">
+          <h2 class="section-title">სკუტერები</h2>
+        </div>
+
+        <div class="carousel">
+          <button class="car-btn left" type="button">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+
+          <div class="car-track">
+            <article class="p-card">
+              <div class="p-img"><img src="items/102.png" alt="" /></div>
+              <div class="p-badges"></div>
+              <div class="p-price"><span class="bl">1199 ₾</span></div>
+              <div class="p-name">Xiaomi Electric Scooter Elite Black</div>
+              <div class="p-actions">
+                <button class="p-mini" type="button">
+                  <i class="fas fa-exchange-alt"></i>
+                </button>
+                <button class="p-add" type="button">
+                  <i class="fa-solid fa-cart-shopping"></i> დამატება
+                </button>
+              </div>
+            </article>
+
+            <article class="p-card">
+              <div class="p-img"><img src="items/103.png" alt="" /></div>
+              <div class="p-badges">
+                <span class="badge">BEST PRICE</span>
+              </div>
+              <div class="black p-price">
+                1299 ₾<span class="smally">1499 ₾</span>
+              </div>
+              <div class="p-name">Xiaomi Electric Scooter 5 Black</div>
+              <div class="p-actions">
+                <button class="p-mini" type="button">
+                  <i class="fas fa-exchange-alt"></i>
+                </button>
+                <button class="p-add" type="button">
+                  <i class="fa-solid fa-cart-shopping"></i> დამატება
+                </button>
+              </div>
+            </article>
+
+            <article class="p-card">
+              <div class="p-img"><img src="items/104.png" alt="" /></div>
+              <div class="p-badges"></div>
+              <div class="p-price"><span class="bl">1479 ₾</span></div>
+              <div class="p-name">Segway Ninebot Kickscooter F2 II Black</div>
+              <div class="p-actions">
+                <button class="p-mini" type="button">
+                  <i class="fas fa-exchange-alt"></i>
+                </button>
+                <button class="p-add" type="button">
+                  <i class="fa-solid fa-cart-shopping"></i> დამატება
+                </button>
+              </div>
+            </article>
+
+            <article class="p-card">
+              <div class="p-img"><img src="items/105.png" alt="" /></div>
+              <div class="p-badges"></div>
+              <div class="p-price"><span class="bl">1699 ₾</span></div>
+              <div class="p-name">Xiaomi Electric Scooter 5 Pro Black</div>
+              <div class="p-actions">
+                <button class="p-mini" type="button">
+                  <i class="fas fa-exchange-alt"></i>
+                </button>
+                <button class="p-add" type="button">
+                  <i class="fa-solid fa-cart-shopping"></i> დამატება
+                </button>
+              </div>
+            </article>
+
+            <article class="p-card">
+              <div class="p-img"><img src="items/106.png" alt="" /></div>
+              <div class="p-badges"></div>
+              <div class="p-price"><span class="bl">1799 ₾</span></div>
+              <div class="p-name">Xiaomi Electric Scooter 5 Max Black</div>
+              <div class="p-actions">
+                <button class="p-mini" type="button">
+                  <i class="fas fa-exchange-alt"></i>
+                </button>
+                <button class="p-add" type="button">
+                  <i class="fa-solid fa-cart-shopping"></i> დამატება
+                </button>
+              </div>
+            </article>
+
+            <article class="p-card">
+              <div class="p-img"><img src="items/107.png" alt="" /></div>
+              <div class="p-badges"></div>
+              <div class="p-price"><span class="bl">1879 ₾</span></div>
+              <div class="p-name">
+                Segway Ninebot Kickscooter F2 Pro II Black
+              </div>
+              <div class="p-actions">
+                <button class="p-mini" type="button">
+                  <i class="fas fa-exchange-alt"></i>
+                </button>
+                <button class="p-add" type="button">
+                  <i class="fa-solid fa-cart-shopping"></i> დამატება
+                </button>
+              </div>
+            </article>
+          </div>
+
+          <button class="car-btn right" type="button">
+            <i class="fa-solid fa-angle-right"></i>
+          </button>
+        </div>
+      </section>
+
+      <section class="wrap section">
+        <div class="section-head">
+          <h2 class="section-title">TOP პროდუქტი</h2>
+        </div>
+
+        <div class="carousel">
+          <button class="car-btn left" type="button">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+
+          <div class="car-track">
+            <article class="p-card">
+              <div class="p-img"><img src="items/108.png" alt="" /></div>
+              <div class="p-badges"></div>
+              <div class="p-price"><span class="bl">1729 ₾</span></div>
+              <div class="p-name">Sony PlayStation PS5 Slim 1TB White</div>
+              <div class="p-actions">
+                <button class="p-mini" type="button">
+                  <i class="fas fa-exchange-alt"></i>
+                </button>
+                <button class="p-add" type="button">
+                  <i class="fa-solid fa-cart-shopping"></i> დამატება
+                </button>
+              </div>
+            </article>
+
+            <article class="p-card">
+              <div class="p-img"><img src="items/109.png" alt="" /></div>
+              <div class="p-badges">
+                <span class="badge">BEST PRICE</span>
+              </div>
+              <div class="black p-price">
+                3999 ₾<span class="smally">4399 ₾</span>
+              </div>
+              <div class="p-name">
+                Apple iPhone 17 Pro Max e-SIM | 256GB Orange
+              </div>
+              <div class="p-actions">
+                <button class="p-mini" type="button">
+                  <i class="fas fa-exchange-alt"></i>
+                </button>
+                <button class="p-add" type="button">
+                  <i class="fa-solid fa-cart-shopping"></i> დამატება
+                </button>
+              </div>
+            </article>
+
+            <article class="p-card">
+              <div class="p-img"><img src="items/110.png" alt="" /></div>
+              <div class="p-badges">
+                <span class="badge">BEST PRICE</span>
+              </div>
+              <div class="p-price">159 ₾<span class="smally">199 ₾</span></div>
+              <div class="p-name">EA Sports FC 26 Game For PS5</div>
+              <div class="p-actions">
+                <button class="p-mini" type="button">
+                  <i class="fas fa-exchange-alt"></i>
+                </button>
+                <button class="p-add" type="button">
+                  <i class="fa-solid fa-cart-shopping"></i> დამატება
+                </button>
+              </div>
+            </article>
+
+            <article class="p-card">
+              <div class="p-img"><img src="items/111.png" alt="" /></div>
+              <div class="p-badges">
+                <span class="badge">BEST PRICE</span>
+              </div>
+              <div class="p-price">
+                2799 ₾<span class="smally">2999 ₾</span>
+              </div>
+              <div class="p-name">
+                Samsung Galaxy S25 Ultra 5G 12/256GB Titanium
+              </div>
+              <div class="p-actions">
+                <button class="p-mini" type="button">
+                  <i class="fas fa-exchange-alt"></i>
+                </button>
+                <button class="p-add" type="button">
+                  <i class="fa-solid fa-cart-shopping"></i> დამატება
+                </button>
+              </div>
+            </article>
+
+            <article class="p-card">
+              <div class="p-img"><img src="items/112.png" alt="" /></div>
+              <div class="p-badges">
+                <span class="badge">BEST PRICE</span>
+              </div>
+              <div class="p-price"><span class="bl">849 ₾</span></div>
+              <div class="p-name">Apple AirPods Pro 3 MFHP4 White</div>
+              <div class="p-actions">
+                <button class="p-mini" type="button">
+                  <i class="fas fa-exchange-alt"></i>
+                </button>
+                <button class="p-add" type="button">
+                  <i class="fa-solid fa-cart-shopping"></i> დამატება
+                </button>
+              </div>
+            </article>
+
+            <article class="p-card">
+              <div class="p-img"><img src="items/113.png" alt="" /></div>
+              <div class="p-badges">
+                <span class="badge">GIFTS</span>
+              </div>
+              <div class="p-price"><span class="bl">299 ₾</span></div>
+              <div class="p-name">
+                Fujifilm Instax Mini 12 Instant Camera Pink
+              </div>
+              <div class="p-actions">
+                <button class="p-mini" type="button">
+                  <i class="fas fa-exchange-alt"></i>
+                </button>
+                <button class="p-add" type="button">
+                  <i class="fa-solid fa-cart-shopping"></i> დამატება
+                </button>
+              </div>
+            </article>
+          </div>
+
+          <button class="car-btn right" type="button">
+            <i class="fa-solid fa-angle-right"></i>
+          </button>
+        </div>
+      </section>
+
+      <footer class="main-footer">
+        <div class="footer-container">
+          <div class="footer-column">
             <h3>ნავიგაცია</h3>
             <ul>
-                <li><a href="#">პერსონალურ მონაცემთა დაცვის პოლიტიკა</a></li>
-                <li><a href="#">ჩვენ შესახებ</a></li>
-                <li><a href="#">წესები და პირობები</a></li>
-                <li><a href="#">მიწოდების სერვისი</a></li>
-                <li><a href="#">კარიერა</a></li>
+              <li><a href="#">პერსონალურ მონაცემთა დაცვის პოლიტიკა</a></li>
+              <li><a href="#">ჩვენ შესახებ</a></li>
+              <li><a href="#">წესები და პირობები</a></li>
+              <li><a href="#">მიწოდების სერვისი</a></li>
+              <li><a href="#">კარიერა</a></li>
             </ul>
-        </div>
+          </div>
 
-        <div class="footer-column">
+          <div class="footer-column">
             <h3>გადახდები</h3>
             <ul>
-                <li><a href="#">გადახდის მეთოდები</a></li>
-                <li><a href="#">გარანტია</a></li>
-                <li><a href="#">განვადება</a></li>
-                <li><a href="#">ნივთის დაბრუნება</a></li>
-                <li><a href="#">ნივთის ონლაინ ყიდვის ინსტრუქცია</a></li>
+              <li><a href="#">გადახდის მეთოდები</a></li>
+              <li><a href="#">გარანტია</a></li>
+              <li><a href="#">განვადება</a></li>
+              <li><a href="#">ნივთის დაბრუნება</a></li>
+              <li><a href="#">ნივთის ონლაინ ყიდვის ინსტრუქცია</a></li>
             </ul>
-        </div>
+          </div>
 
-        <div class="footer-column">
+          <div class="footer-column">
             <h3>გამოგვყევი</h3>
             <ul class="social-links">
-                <li><img src="images/facebook.png" alt=""><a href="#">Facebook</a></li>
-                <li><img src="images/youtube.png" alt=""><a href="#">Youtube</a></li>
-                <li><img src="images/instagram.png" alt=""><a href="#">Instagram</a></li>
-                <li><img src="images/tiktok.png" alt=""><a href="#">Tik Tok</a></li>
+              <li>
+                <img src="images/facebook.png" alt="" /><a href="#">Facebook</a>
+              </li>
+              <li>
+                <img src="images/youtube.png" alt="" /><a href="#">Youtube</a>
+              </li>
+              <li>
+                <img src="images/instagram.png" alt="" /><a href="#"
+                  >Instagram</a
+                >
+              </li>
+              <li>
+                <img src="images/tiktok.png" alt="" /><a href="#">Tik Tok</a>
+              </li>
             </ul>
-        </div>
+          </div>
 
-        <div class="footer-column">
+          <div class="footer-column">
             <h3>კონტაქტი</h3>
             <ul class="contact-links">
-                <li><span class="icon"><img src="images/email.png" alt=""></span> <a href="mailto:info@zoommer.ge">Info@zoommer.ge</a></li>
-                <li><span class="icon"><img src="images/number.png" alt=""></span> <a href="tel:*7007">+995 (32) 2 60 30 60 / *7007</a></li>
-                <li><span class="icon"><img src="images/location.png" alt=""></span> <a href="#">ფილიალები</a></li>
-                <li><span class="icon"><img src="images/location.png" alt=""></span> <a href="#">კორპორატიული გაყიდვები</a></li>
+              <li>
+                <span class="icon"><img src="images/email.png" alt="" /></span>
+                <a href="mailto:info@zoommer.ge">Info@zoommer.ge</a>
+              </li>
+              <li>
+                <span class="icon"><img src="images/number.png" alt="" /></span>
+                <a href="tel:*7007">+995 (32) 2 60 30 60 / *7007</a>
+              </li>
+              <li>
+                <span class="icon"
+                  ><img src="images/location.png" alt=""
+                /></span>
+                <a href="#">ფილიალები</a>
+              </li>
+              <li>
+                <span class="icon"
+                  ><img src="images/location.png" alt=""
+                /></span>
+                <a href="#">კორპორატიული გაყიდვები</a>
+              </li>
             </ul>
             <div class="app-info">
-                <span>Zoommer App</span>
-                <span class="powered-by">Powered By <strong>eCommerce 360</strong></span>
+              <span>Zoommer App</span>
+              <span class="powered-by"
+                >Powered By <strong>eCommerce 360</strong></span
+              >
             </div>
+          </div>
         </div>
-    </div>
-    
-    <div class="footer-bottom">
-        <p>Copyright © 2025 Zoommer.ge. All rights reserved.</p>
-    </div>
-</footer>
 
-    <div class="floating">
-      <button class="float-btn up" type="button"><i class="fa-solid fa-arrow-up-long"></i></button>
-      <button class="float-btn chat" type="button"><i class="fas fa-exchange-alt"></i></button>
+        <div class="footer-bottom">
+          <p>Copyright © 2025 Zoommer.ge. All rights reserved.</p>
+        </div>
+      </footer>
 
-      <script src="script.js"></script>
-    </div>
-  </main>
-</body>
+      <div class="floating">
+        <button class="float-btn up" type="button">
+          <i class="fa-solid fa-arrow-up-long"></i>
+        </button>
+        <button class="float-btn chat" type="button">
+          <i class="fas fa-exchange-alt"></i>
+        </button>
+
+        <script src="script.js"></script>
+      </div>
+    </main>
+  </body>
 </html>
